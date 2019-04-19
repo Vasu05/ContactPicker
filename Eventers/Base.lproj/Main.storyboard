@@ -78,5 +78,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Contact Detail PageVC-->
+        <scene sceneID="qum-L3-l1l">
+            <objects>
+                <viewController id="U9V-qF-Teh" customClass="ContactDetailPageVC" customModule="Eventers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z6h-VK-hmE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qql-Tj-olU" userLabel="ContainerView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zcc-mI-1R3">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Zcc-mI-1R3" secondAttribute="trailing" id="2Y7-qf-wbN"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zcc-mI-1R3" secondAttribute="bottom" id="Y8M-eR-5ao"/>
+                                    <constraint firstItem="Zcc-mI-1R3" firstAttribute="top" secondItem="Qql-Tj-olU" secondAttribute="top" id="g6y-JH-uac"/>
+                                    <constraint firstItem="Zcc-mI-1R3" firstAttribute="leading" secondItem="Qql-Tj-olU" secondAttribute="leading" id="j4J-qo-RpM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Do-sf-0nd" firstAttribute="bottom" secondItem="Qql-Tj-olU" secondAttribute="bottom" id="FpW-vg-bdm"/>
+                            <constraint firstItem="6Do-sf-0nd" firstAttribute="trailing" secondItem="Qql-Tj-olU" secondAttribute="trailing" id="M2Q-Up-E68"/>
+                            <constraint firstItem="Qql-Tj-olU" firstAttribute="leading" secondItem="6Do-sf-0nd" secondAttribute="leading" id="ZhW-Pf-xSa"/>
+                            <constraint firstItem="Qql-Tj-olU" firstAttribute="top" secondItem="6Do-sf-0nd" secondAttribute="top" id="vpe-cb-imS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Do-sf-0nd"/>
+                    </view>
+                    <connections>
+                        <outlet property="mTableView" destination="Zcc-mI-1R3" id="iVw-es-kGD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djS-Sw-dvk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="27"/>
+        </scene>
     </scenes>
 </document>
