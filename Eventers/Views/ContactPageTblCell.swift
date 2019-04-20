@@ -36,22 +36,26 @@ class ContactPageTblCell: UITableViewCell {
         checkbox.uncheckedBorderColor = .black
         checkbox.checkmarkColor =  UIColor.init(rgb: 0x0073cf)
         checkbox.useHapticFeedback = true
+        //checkbox.set
         checkbox.addTarget(self, action: #selector(checkboxValueChanged(sender:)), for: .valueChanged)
         mContentView.addSubview(checkbox)
         // Initialization code
     }
     
     @objc func checkboxValueChanged(sender: Checkbox) {
-
-        self.layoutIfNeeded()
-        cellData?.pCustom2 = true
+        self.cellData?.pCustom2 = sender.isChecked
+        self.checkbox.isChecked = sender.isChecked
         print("checkbox value change: \(sender.isChecked)")
+        self.delegate?.cellTapped(index: self.index)
+    }
+     func valueChanged(sender: Checkbox) {
         
-        if sender.isChecked{
-            self.delegate?.cellTapped(index: index)
-        }
-        else{
-            setupUncheckedLbl()
+        //self.layoutIfNeeded()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1)  {
+            self.cellData?.pCustom2 = sender.isChecked
+            print("checkbox value change: \(sender.isChecked)")
+            
+            self.delegate?.cellTapped(index: self.index)
         }
         
     }
@@ -94,6 +98,7 @@ class ContactPageTblCell: UITableViewCell {
     
     func configureUI(obj :contactModel?,index:Int = -1 , cellData : MKGenericTblDataModel){
         self.cellData = cellData
+        self.index = index
         if let data = obj{
             if let img = data.contactObj?.imageData{
                 mImageView.image = UIImage(data: img)
@@ -101,7 +106,7 @@ class ContactPageTblCell: UITableViewCell {
             mNameLbl.text = data.givenName
             
             let selected = cellData.pCustom2 as? Bool ?? false
-            
+            self.checkbox.isChecked = selected
             if selected{
                 setupCheckedLbl()
             }
@@ -110,7 +115,7 @@ class ContactPageTblCell: UITableViewCell {
             }
 
         }
-        self.index = index
+        
         
     }
     

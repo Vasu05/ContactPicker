@@ -25,4 +25,11 @@ class FinalPageTblCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configureUIWithDataSource(dataObj : contactModel,mobileNumber:String ,isLastCell : Bool = false){
+        
+        mLineView.isHidden = isLastCell
+        mUserNameLbl.text = dataObj.givenName ?? ""
+        mMobileNumberLbl.text = mobileNumber
+    }
+    
 }

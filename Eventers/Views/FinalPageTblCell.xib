@@ -42,7 +42,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.2666666667" green="0.61176470589999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aLe-bd-cfh" firstAttribute="leading" secondItem="eMT-gN-3qg" secondAttribute="leading" constant="16" id="02S-MV-ndR"/>
                             <constraint firstItem="NA8-YK-wxs" firstAttribute="top" secondItem="eMT-gN-3qg" secondAttribute="top" constant="12" id="0U7-Tp-N0V"/>
@@ -64,6 +64,7 @@
                     <constraint firstItem="eMT-gN-3qg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="y4H-BT-j88"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="mLineView" destination="IRq-MP-RVy" id="z7Y-Rq-eNT"/>
