@@ -23,7 +23,7 @@ class ContactPageTblCell: UITableViewCell {
     
     var index = -1
     let checkbox = Checkbox(frame: CGRect(x: 240, y: 16, width: 18, height: 18))
-    private var cellData:contactModel?
+    private var cellData:MKGenericTblDataModel?
     
     var showPopup: (() -> Void)?
     
@@ -44,50 +44,71 @@ class ContactPageTblCell: UITableViewCell {
     @objc func checkboxValueChanged(sender: Checkbox) {
 
         self.layoutIfNeeded()
-        cellData?.isChecked = sender.isChecked
+        cellData?.pCustom2 = true
         print("checkbox value change: \(sender.isChecked)")
-        self.delegate?.cellTapped(index: index)
+        
+        if sender.isChecked{
+            self.delegate?.cellTapped(index: index)
+        }
+        else{
+            setupUncheckedLbl()
+        }
         
     }
     
     func setupCheckedLbl(){
-        let font1 = UIFont.init(name: "Arial", size: 16.0)
-        let font2 = UIFont.init(name: "Arial", size: 14.0)
-        let str = cellData?.givenName ?? ""
-        let str2 = "\n" + (cellData?.phoneNumbers?.first ?? "")
-        let attriString1 = NSAttributedString(string:str, attributes:
-            [NSAttributedString.Key.foregroundColor: UIColor.init(rgb: 0x404040),
-             NSAttributedString.Key.font: font1])
-        let attriString2 = NSAttributedString(string:str2, attributes:
-            [NSAttributedString.Key.foregroundColor: UIColor.init(rgb: 0x808080),
-             NSAttributedString.Key.font: font2])
-        let combination = NSMutableAttributedString()
-        combination.append(attriString1)
-        combination.append(attriString2)
-        mNameLbl.attributedText = combination
+        
+        let number = cellData?.pCustom3 as? String ?? ""
+        
+        if let cellData = cellData?.pCustom1 as? contactModel{
+            
+            let font1 = UIFont.init(name: "Arial", size: 16.0)
+            let font2 = UIFont.init(name: "Arial", size: 14.0)
+            let str = cellData.givenName ?? ""
+            let str2 = "\n" + number
+            let attriString1 = NSAttributedString(string:str, attributes:
+                [NSAttributedString.Key.foregroundColor: UIColor.init(rgb: 0x404040),
+                 NSAttributedString.Key.font: font1])
+            let attriString2 = NSAttributedString(string:str2, attributes:
+                [NSAttributedString.Key.foregroundColor: UIColor.init(rgb: 0x808080),
+                 NSAttributedString.Key.font: font2])
+            let combination = NSMutableAttributedString()
+            combination.append(attriString1)
+            combination.append(attriString2)
+            mNameLbl.attributedText = combination
+        }
+        
     }
     
     func setupUncheckedLbl(){
-        let font1 = UIFont.init(name: "Arial", size: 16.0)
-        let attriString1 = NSAttributedString(string:cellData?.givenName ?? ""  , attributes:
-            [NSAttributedString.Key.foregroundColor: UIColor.init(rgb: 0x404040),
-             NSAttributedString.Key.font: font1])
-        mNameLbl.attributedText = attriString1
+        cellData?.pCustom3 = ""
+        if let cellData = cellData?.pCustom1 as? contactModel{
+            let font1 = UIFont.init(name: "Arial", size: 16.0)
+            let attriString1 = NSAttributedString(string:cellData.givenName ?? "" , attributes:
+                [NSAttributedString.Key.foregroundColor: UIColor.init(rgb: 0x404040),
+                 NSAttributedString.Key.font: font1])
+            mNameLbl.attributedText = attriString1
+        }
+       
     }
     
-    func configureUI(obj :contactModel?,index:Int = -1){
-        cellData = obj
+    func configureUI(obj :contactModel?,index:Int = -1 , cellData : MKGenericTblDataModel){
+        self.cellData = cellData
         if let data = obj{
             if let img = data.contactObj?.imageData{
                 mImageView.image = UIImage(data: img)
             }
             mNameLbl.text = data.givenName
-            if data.isChecked ?? false{
+            
+            let selected = cellData.pCustom2 as? Bool ?? false
+            
+            if selected{
                 setupCheckedLbl()
             }
             else{
                 setupUncheckedLbl()
             }
+
         }
         self.index = index
         

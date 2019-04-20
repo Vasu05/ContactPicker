@@ -21,6 +21,9 @@
 		12FC81D7226A45FC00BA6D6F /* ContactPopupTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12FC81D5226A45FC00BA6D6F /* ContactPopupTblCell.xib */; };
 		12FC81D9226A4A7F00BA6D6F /* ContactPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC81D8226A4A7F00BA6D6F /* ContactPopupVC.swift */; };
 		12FC81DD226B0E7000BA6D6F /* MKGenericTblDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FC81DC226B0E7000BA6D6F /* MKGenericTblDataModel.m */; };
+		12FC81E6226B818C00BA6D6F /* FinalPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC81E5226B818C00BA6D6F /* FinalPageVC.swift */; };
+		12FC81E9226B848A00BA6D6F /* FinalPageTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FC81E7226B848A00BA6D6F /* FinalPageTblCell.swift */; };
+		12FC81EA226B848A00BA6D6F /* FinalPageTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12FC81E8226B848A00BA6D6F /* FinalPageTblCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		12FC81DB226B0E7000BA6D6F /* MKGenericTblDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKGenericTblDataModel.h; sourceTree = "<group>"; };
 		12FC81DC226B0E7000BA6D6F /* MKGenericTblDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKGenericTblDataModel.m; sourceTree = "<group>"; };
 		12FC81E1226B105100BA6D6F /* Eventers-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eventers-Bridging-Header.h"; sourceTree = "<group>"; };
+		12FC81E5226B818C00BA6D6F /* FinalPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalPageVC.swift; sourceTree = "<group>"; };
+		12FC81E7226B848A00BA6D6F /* FinalPageTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalPageTblCell.swift; sourceTree = "<group>"; };
+		12FC81E8226B848A00BA6D6F /* FinalPageTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinalPageTblCell.xib; sourceTree = "<group>"; };
 		85A4F02544394DE50A24B178 /* Pods-Eventers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventers.release.xcconfig"; path = "Target Support Files/Pods-Eventers/Pods-Eventers.release.xcconfig"; sourceTree = "<group>"; };
 		934B8B2682EE3C641805FB67 /* Pods-Eventers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eventers.debug.xcconfig"; path = "Target Support Files/Pods-Eventers/Pods-Eventers.debug.xcconfig"; sourceTree = "<group>"; };
 		DD7F6D9A8B04402505D8E95C /* Pods_Eventers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eventers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +113,7 @@
 				12FC816F2269BD2200BA6D6F /* HomePageVC.swift */,
 				12FC8183226A082400BA6D6F /* ContactDetailPageVC.swift */,
 				12FC81D8226A4A7F00BA6D6F /* ContactPopupVC.swift */,
+				12FC81E5226B818C00BA6D6F /* FinalPageVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +125,8 @@
 				12FC8189226A091B00BA6D6F /* ContactPageTblCell.xib */,
 				12FC81D4226A45FC00BA6D6F /* ContactPopupTblCell.swift */,
 				12FC81D5226A45FC00BA6D6F /* ContactPopupTblCell.xib */,
+				12FC81E7226B848A00BA6D6F /* FinalPageTblCell.swift */,
+				12FC81E8226B848A00BA6D6F /* FinalPageTblCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12FC81EA226B848A00BA6D6F /* FinalPageTblCell.xib in Resources */,
 				12FC81782269BD2300BA6D6F /* LaunchScreen.storyboard in Resources */,
 				12FC81D7226A45FC00BA6D6F /* ContactPopupTblCell.xib in Resources */,
 				12FC81752269BD2300BA6D6F /* Assets.xcassets in Resources */,
@@ -278,11 +288,13 @@
 			files = (
 				12FC81D9226A4A7F00BA6D6F /* ContactPopupVC.swift in Sources */,
 				12FC818A226A091B00BA6D6F /* ContactPageTblCell.swift in Sources */,
+				12FC81E9226B848A00BA6D6F /* FinalPageTblCell.swift in Sources */,
 				12FC8184226A082400BA6D6F /* ContactDetailPageVC.swift in Sources */,
 				12FC81702269BD2200BA6D6F /* HomePageVC.swift in Sources */,
 				12FC81DD226B0E7000BA6D6F /* MKGenericTblDataModel.m in Sources */,
 				12FC81D6226A45FC00BA6D6F /* ContactPopupTblCell.swift in Sources */,
 				12FC816E2269BD2200BA6D6F /* AppDelegate.swift in Sources */,
+				12FC81E6226B818C00BA6D6F /* FinalPageVC.swift in Sources */,
 				12FC81822269EFB900BA6D6F /* model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,9 +9,8 @@
 import Foundation
 import Contacts
 
-class contactModel{
+struct contactModel{
     var givenName    : String?
     var phoneNumbers : [String]?
     var contactObj   : CNContact?
-    var isChecked    : Bool?
 }

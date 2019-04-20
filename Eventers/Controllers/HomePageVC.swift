@@ -27,7 +27,11 @@ class HomePageVC: UIViewController {
                 //self.retrieveContactsWithStore(store: self.store)
             }
         }
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     func findContacts()  {

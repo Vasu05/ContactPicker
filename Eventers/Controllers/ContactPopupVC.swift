@@ -16,11 +16,14 @@ protocol ContactPopupVCdelegate :class{
 class ContactPopupVC: UIViewController {
 
     @IBOutlet weak var mTableView: UITableView!
+    @IBOutlet weak var mNameLbl: UILabel!
+    
+    
     let cell_Identifier = "ContactPopupTblCell"
     var mContentHeight:CGFloat = 0
     var mScreen:CGRect!
     weak var delegate: ContactPopupVCdelegate?
-    @IBOutlet weak var mNameLbl: UILabel!
+    
     //MARK:- Properties
     var pNumbers:[String]?
     var pName  = ""
@@ -79,6 +82,7 @@ extension ContactPopupVC : UITableViewDelegate ,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell  = mTableView.dequeueReusableCell(withIdentifier: cell_Identifier) as? ContactPopupTblCell{
+            cell.delegate = self
             let cellData = pNumbers?[indexPath.row] ?? ""
             cell.configureUI(phoneNumber: cellData,index: indexPath.row)
             return cell
@@ -97,6 +101,9 @@ extension ContactPopupVC : UITableViewDelegate ,UITableViewDataSource{
 
 extension ContactPopupVC : ContactPopupTblCelldelegate{
     func cellTapped(index: Int) {
-        
+        let number = pNumbers?[index] ?? ""
+        self.dismiss(animated: true) {
+            self.delegate?.cellselected(number: number)
+        }
     }
 }
