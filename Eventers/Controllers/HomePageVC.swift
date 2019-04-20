@@ -12,9 +12,11 @@ import Contacts
 class HomePageVC: UIViewController {
     private let store = CNContactStore()
     private var mContactModel = [contactModel]()
+    @IBOutlet weak var mNextBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mNextBtn.layer.cornerRadius = 4
         requestAccess { (success) in
             
             if success{
@@ -32,7 +34,7 @@ class HomePageVC: UIViewController {
         
         let store = CNContactStore()
         
-        let keysToFetch = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey]
+        let keysToFetch = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey,CNContactImageDataKey]
         
         let fetchRequest = CNContactFetchRequest(keysToFetch: keysToFetch as [CNKeyDescriptor])
         
@@ -99,6 +101,26 @@ class HomePageVC: UIViewController {
         present(alert, animated: true)
     }
     
+    
+    @IBAction func nextBtnPressed(_ sender: Any) {
+        
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContactDetailPageVC") as? ContactDetailPageVC{
+            vc.pDataSource = mContactModel
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+//        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContactDetailPageVC") as? ContactDetailPageVC{
+//            vc.pDataSource = mContactModel
+//            self.navigationController?.pushViewController(vc, animated: true)
+//
+//        }
+    }
 }
 
 extension HomePageVC {

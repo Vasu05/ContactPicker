@@ -7,5 +7,8 @@ target 'Eventers' do
 
   # Pods for Eventers
   pod 'TPKeyboardAvoiding'
+  pod 'SimpleCheckbox'
+  pod 'SwiftMessages'
+  pod 'STPopup'
 
 end

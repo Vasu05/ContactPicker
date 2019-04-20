@@ -1,16 +1,30 @@
 PODS:
+  - SimpleCheckbox (1.5.0)
+  - STPopup (1.8.6)
+  - SwiftMessages (6.0.2):
+    - SwiftMessages/App (= 6.0.2)
+  - SwiftMessages/App (6.0.2)
   - TPKeyboardAvoiding (1.3.2)
 
 DEPENDENCIES:
+  - SimpleCheckbox
+  - STPopup
+  - SwiftMessages
   - TPKeyboardAvoiding
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - SimpleCheckbox
+    - STPopup
+    - SwiftMessages
     - TPKeyboardAvoiding
 
 SPEC CHECKSUMS:
+  SimpleCheckbox: 1e59697852ef3caa56a0ed1b40be0f034763b9b9
+  STPopup: c2c8c153672c8899b59ceba0804cc63fc5ac7483
+  SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
   TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
 
-PODFILE CHECKSUM: e908ed0216ae5bd0ccbdd3a0139706a1a89781ac
+PODFILE CHECKSUM: bd3699343921471b5e978cb11400e4b2bdca18ae
 
 COCOAPODS: 1.6.1

@@ -7,103 +7,429 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		289AF2A8FAA57F260D3893ACCFCC3CA0 /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C4A2F0AB7AAA440FAAE48EEAC865476 /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36268B2C78C616E90AB49793A51E1E2D /* Pods-Eventers-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2FFAD64B7227E59FF631E32B203771 /* Pods-Eventers-dummy.m */; };
-		44378A1C481BACFB8300164A22292377 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 144A1BC8DDF5F416546EB52F0D970A46 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		52000E7C21396B4929C68ACFD4D71A70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		54102BD3FDE5FF43647C31B56E43B968 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C5F0A4D5BE4E8DCFBDA42B29AD3D949 /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		576F726540B9A197C116392C812377D8 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 874883FF6EC925F85698B07A6F161D78 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6C932ECF398C3E753C6E736AF57FE568 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 128BD5E7B78BDDB54499E6DE686D54F1 /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8612D00EA7C5A9922B25110DED33ADDC /* Pods-Eventers-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB810581806B12F8284C3527A08A6B9 /* Pods-Eventers-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0F43FA362ABA935DCE2294C881177A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		A6DD8D2323A3363E7043D6275D28D143 /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2174B3DDD8498DA7629AE96EDD2705B4 /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC31DBB1233B1BBF443B3E374324E24E /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F4B0D25A24ACBF494E0AC361022C5E /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC15D287DC2766591075BA77DA45ADFE /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A51BB632FEFA677E69E93CAD5AE1A07 /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCD03D9344035B90536F4ABE306B6D5B /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3802FCF75AE1D4AF24E7EFFFECDA47 /* TPKeyboardAvoiding-dummy.m */; };
-		DBA629C4AFC98BE4727E077A352D3577 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CBE2F2DB72FF053A3E434D9689CFF /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		00AEC92425F14BC9563BC5ECF6CBD002 /* STPopupLeftBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D2378309B50382A61F1CA311D63B605 /* STPopupLeftBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0183C4B36468689874DA2C6999C7499C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
+		05C44EEC177482C35B66B2271C5AAA95 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 022BCD7841222F322B87CD074E6849D5 /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E8974161DA028B85D681C171BE5A3F /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47823038696E5236B91CB1BF946EF9C /* Animator.swift */; };
+		0BDC81D982B8EFC503D7E829DDE26C75 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EDD818C5E407A4F5AA7986C32EF5682 /* MessageView.xib */; };
+		1025EFCD280CD80E7F1E219AA4121838 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCBA8515DA332CE1C244C22F0947595 /* Presenter.swift */; };
+		12F2CB505E0933EC8ED489396011EAB3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB838AF450764242711F31A705AE2A /* Error.swift */; };
+		1C90E6D5887E0BF274497D5AB6B72BC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		204E11400A2174FC292CCAE30D93FED2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9FF34CCAC8BC4A436B60187BCE3F7E /* Theme.swift */; };
+		20E7EEE22EC9F35D178D1D292E403B7A /* UIEdgeInsets+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AF9B5CB8B5D4A7D2C32E49F5A5C441 /* UIEdgeInsets+Utils.swift */; };
+		23F45FB420B04253ECD778592F361633 /* successIconSubtle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8707814EA9BDACC26DC8B1ECFF59003E /* successIconSubtle@3x.png */; };
+		26A6AACCD4FB5599A5F2D78FC69F9D4A /* infoIconLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0D8CBD73853C11C6229F4BB6D8FD2D /* infoIconLight@2x.png */; };
+		2DC36D866E4983F9704814F0B7400EB8 /* successIconSubtle.png in Resources */ = {isa = PBXBuildFile; fileRef = A39036AD2169F1F2E6D373445AA5C4F2 /* successIconSubtle.png */; };
+		3200530FF62028758A5CB0CB77BE6F6F /* SwiftMessages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EBC3CF2134D187D14454E077144F099B /* SwiftMessages.bundle */; };
+		327B4FA1719633B7DB9700E4D4AF77C2 /* warningIconLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9130424BFFCC4F552066377FA346691F /* warningIconLight@2x.png */; };
+		328D0E0660F7752D9F0364388F6B89ED /* STPopup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6AEDD4525C44B0FDC6BD9E23C2745B /* STPopup-dummy.m */; };
+		330BBD2B815D77A03E63BAA43B149611 /* warningIconSubtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8960DB53DF565C7891BECCB17EC46D78 /* warningIconSubtle.png */; };
+		3491BE251608C1C9D70DEB966D78B2A5 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE94DE590D6ED30933C5179547B5E040 /* CardView.xib */; };
+		34B165F90344731B369EA2AC2185F911 /* errorIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 041774C836BF5C113951F0A2CEF1A113 /* errorIcon.png */; };
+		3686A651A5F6E53E61E642805BFD9C10 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B80566CA18D5B420AEE4EB5DF9CF5 /* PassthroughView.swift */; };
+		36A748BF8903F61220DC75F3448A0289 /* STPopupLeftBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 372DD3A8FA6A144A7B631AD8A7C0BAE4 /* STPopupLeftBarItem.m */; };
+		38B241D5870EC5A9BEED51C01A73E559 /* warningIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 933B86D12F338678EC3F6235316D8307 /* warningIcon@2x.png */; };
+		3951BEC850C011767A4516C9A9499772 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		3C52B4EB6FEB98A955F8794EA7CEC9B6 /* successIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A63DE15DA386537B1C19EA72B48C9EB /* successIcon.png */; };
+		3C9FBCA361F1439EEEFB7A951484DBC0 /* warningIconSubtle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3DF45C2909446A0FC4A7ECF9FA415A9 /* warningIconSubtle@3x.png */; };
+		3E2AA462F3112B17F7009C779995E779 /* Pods-Eventers-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB810581806B12F8284C3527A08A6B9 /* Pods-Eventers-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F20787B45F26A5A855A447F9FEF78C1 /* errorIconSubtle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 217A59199BE2ABF02D72230DF9C7A437 /* errorIconSubtle@3x.png */; };
+		436AEAF2828BACBE8C9B21D5D8417028 /* TopBottomAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E617366A934EE9C6C9DF0471E6A6300 /* TopBottomAnimation.swift */; };
+		443452E3BEA2CEC0E21320CF9AA232A7 /* PhysicsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D618677223F55820AEC9BE2AD6529 /* PhysicsAnimation.swift */; };
+		478D58243A83A485E5B4706FE12E10E2 /* SwiftMessages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA59DA2015DC54EF24143D76113444F8 /* SwiftMessages-dummy.m */; };
+		4A90F5CB9B0B97E7941C510BF5F5DE4A /* SimpleCheckbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E2050A2DE2CA93C7D0083ADBD92536 /* SimpleCheckbox-dummy.m */; };
+		4FA8FDBF6071B7A46BB47588C7C7B0A4 /* ViewControllerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14568B12D9141B5455A0A73FE574C2B /* ViewControllerContainerView.swift */; };
+		5019A76BB17BF2434F3C1D744ACEE771 /* UIViewController+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 080C74BE90DDD8E3E4AB18BEBA5809C2 /* UIViewController+STPopup.m */; };
+		52AE8B4D3ECEA49709B0961D97597F38 /* SwiftMessages-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42D096F422141E33DDA892755E16DD4B /* SwiftMessages-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53F3572173FCB863A32B4B860049DA53 /* STPopupControllerTransitioningFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8134A5800E096EAA0B12B95A297AB /* STPopupControllerTransitioningFade.m */; };
+		554A48DA6730D2AE2DF6DF4B0A8EFE6C /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E06FAADC87F6E111A52D480C1B656E /* TPKeyboardAvoiding-dummy.m */; };
+		5854CC8CA695B8D7B1DEB4F92D63DFC2 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6595600E7E90BBC9B9F7C8368B396A47 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5AD8E3B386DF5EC2C191F5CE80A59BE3 /* BackgroundViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A985F8B277F22909DE0643797643F /* BackgroundViewable.swift */; };
+		5F67C93392905A5A31B663FE2417F2E1 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F616FB9E7C267C13046069F73005F8 /* Checkbox.swift */; };
+		60C1462CAC04FFEB55BE697807926C4A /* warningIconLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E3079EFD5FDFBAD97B7EFD0A6C6972A /* warningIconLight@3x.png */; };
+		630CC71779BD864D080F839105FC194A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2745F25431F9377ECEA018ACFD84C1C /* MessageView.swift */; };
+		6875D4D3ED98F2DB758310BD800C2C57 /* infoIconSubtle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 732A6BC4EF5964828AFA2FA78FEFFA24 /* infoIconSubtle@2x.png */; };
+		6CE8EF67053B7FF51F7FBFF526E16B41 /* infoIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FFE7143BF6B87BE01DA050397C3FD7 /* infoIcon@3x.png */; };
+		6D2763990D7BC03C49E4FC24B37DB0AB /* MarginAdjustable+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F332F5C988E3293B8CC0969DF201A19 /* MarginAdjustable+Animation.swift */; };
+		70A5D322D2529B3E3C354AFD27B51CD2 /* MarginAdjustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57FB1C455A8C3DC5412E29FC16CB895 /* MarginAdjustable.swift */; };
+		7320B8A177F194E8A9919960E28ED437 /* infoIconLight.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B54147B5577EAAC91AB06F64383D3D /* infoIconLight.png */; };
+		756F66C6DBE4642965DEE832B8C28F28 /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BC20EF5548A4E99FC8836254FE5530C /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76DDEB70926F5ADB29E8C0DE725E5FA4 /* errorIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 517270DC005DE5CD95E946244842E0B8 /* errorIcon@3x.png */; };
+		771D37FB2A3FDB041DC426BBF6DEA866 /* warningIconSubtle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A0E0A64EC4F6429E9AA7FA3D341A2B /* warningIconSubtle@2x.png */; };
+		78CEDE9D730844F26050C25C92BE483A /* UIViewController+STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 251DB8BF5EC37EA182AAEC018AF1121E /* UIViewController+STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ACE7C3119C886F592364051645C0F0E /* UIResponder+STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = C09F53068E292BBDF8ADA985C24FFB68 /* UIResponder+STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AD8CA905849F10EE91D46A1B0C7E0EC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B459CE2A444005232814F5667B230 /* BaseView.swift */; };
+		7BAE7635327758DFBD2D15ED1451FC89 /* NSBundle+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B21E8F71103C6DE71FBED11BC1E3A4 /* NSBundle+Utils.swift */; };
+		7D9EE7586496CFC45BE6161697C9255E /* errorIconLight.png in Resources */ = {isa = PBXBuildFile; fileRef = E6290FDFE90A51D023C8B3FC693162EF /* errorIconLight.png */; };
+		886F17FB1C15A4E363BB4B4BC83F74D8 /* UIResponder+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF6DB66653378017A212339719B1B6 /* UIResponder+STPopup.m */; };
+		8C246877E46ED1B58F7B52143172ABA4 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95239B77248A48DE83314510D313B34 /* UIViewController+Utils.swift */; };
+		8E10D061B7B87CC48F56A1758EBFC45F /* infoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C33A57FACB531B5AC818479A376F7F0B /* infoIcon@2x.png */; };
+		9260FF5ACC29732F49A8E40A0EBC9DE6 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89888DE5DB3C0309CBA96FBED706A5D4 /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		94F5F53F264A7B804DCA9FA5D0DF9502 /* STPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D42803322B05DB0D415A6431B9C0E92 /* STPopupController.m */; };
+		9609AA4DB24F59781194DAB8DB0653D3 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EB5D3A92425FAA3F0D81F92C40EBF80 /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		962C6FD441D9A0276FBA28B57CD27327 /* CenteredView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BBA85B0083FCD8C20C8DBB53F3359F /* CenteredView.xib */; };
+		978EE2AD408DDAC44CD60DB791316E14 /* warningIconLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB81A96F8486834CE0FD396202BE484 /* warningIconLight.png */; };
+		9DB01C5ED65F9D69E9D188052A97B902 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6392655180CC4358391B493D56BF3712 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9EC5543EBEE7E1FCAD638CF9AEFB137A /* STPopup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08F5583F0C1A116452035BF32B8C09FD /* STPopup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FA379B36D933DC0005E5FB461E26ADA /* infoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A8F68239925263C7766DAEDEA54C81B /* infoIcon.png */; };
+		A0A46300D23ACCE758BFA544B2026E12 /* SwiftMessagesSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE52D10E77FD031A0C268B38331D00 /* SwiftMessagesSegue.swift */; };
+		A0B90FCA41F62ACBC30C863F834E917D /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = C71C20380B008FC331F3F7DD4547293D /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5C4C140F2EB6E5248E2C3DF2BC3439B /* PassthroughWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CE857A17658B07E7E6B3B77CCAD3F1 /* PassthroughWindow.swift */; };
+		A8718617A51B28D704988EAD32BB78C9 /* STPopupController.h in Headers */ = {isa = PBXBuildFile; fileRef = 23293BA77FA08FEC385A0F25B24729D1 /* STPopupController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABC278D089B5B5ECB859F7FB4B1D7271 /* CornerRoundingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF867B1173135A5CD149CBB5369CB40 /* CornerRoundingView.swift */; };
+		AD541205D5FEA6AD52407091A891C1D8 /* successIconLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD88377FEA0EF68D8F299365E9149AB8 /* successIconLight@2x.png */; };
+		B35E7DAA28BE06982F957DD8265E2901 /* StatusLine.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B769DD4C4A771B1F489A5CEA195D19 /* StatusLine.xib */; };
+		B532994166E6E023CBDEC140CB0D28CF /* WindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4BABDDCEA4B1546FE0642D80ED995B /* WindowViewController.swift */; };
+		B8529A8FF481BE4A7B10598D37F06902 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB94E66C307102FC36DFD29F799469B /* Array+Utils.swift */; };
+		B940641731E9C8D45ED6DD6B42E1FED2 /* STPopupNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE21EA27E43C52EBB1F9D66D04D8B03 /* STPopupNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCC63689F6CD0A4E55237A0EFA1E6853 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 104C679AEE97A472CD220AEF7C78EE26 /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BE546ADC528B3CAC6AD41A627D5CA087 /* STPopupControllerTransitioningFade.h in Headers */ = {isa = PBXBuildFile; fileRef = B89AC7E86B30B6CF8525EA0A00D21FE4 /* STPopupControllerTransitioningFade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEF24F2F8A7133E13C29C151E140B60A /* SimpleCheckbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F68136C3CD113518887BD159F59A138B /* SimpleCheckbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFCC1C74FC65453206E0B4F2C6E467B0 /* infoIconSubtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 82526EC62668033F642E10803808E394 /* infoIconSubtle.png */; };
+		C1F25CE2A910C95E5118CDD6AA362132 /* successIconLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7012D884BED2FDB4FCE3A9A4713517A8 /* successIconLight@3x.png */; };
+		C335EEEC061CD925DDB2C82A69ED523A /* PhysicsPanHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0CFB996FC15D9DB2D6489AF82FB128 /* PhysicsPanHandler.swift */; };
+		CB6A8A7789A8E03628297484731E15B6 /* successIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F246FB41D34B4537B4010EAD7EB11EB9 /* successIcon@2x.png */; };
+		CE0C3BC055F3624208A12C5ED45DA624 /* STPopupControllerTransitioningSlideVertical.m in Sources */ = {isa = PBXBuildFile; fileRef = 087EE9F2C2D47C5A5303556702498646 /* STPopupControllerTransitioningSlideVertical.m */; };
+		CE52EF3CC84D210146081B719A45C0EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		CE59343A20EC43D2CB89EF4E86816707 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96769DFD6813DC61E1A74A00136812C /* TabView.xib */; };
+		CEAAB6003FA1CC3E2E871163459B3419 /* errorIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA6BE00B07EE4A36921ECB36EE0A20E /* errorIcon@2x.png */; };
+		D04D3BB7E2B7E64C322F0DB41F6D8567 /* errorIconSubtle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF539689A118A10BCC7CAAAE73219DF /* errorIconSubtle@2x.png */; };
+		D0E53D37B4189360211D446204AA6F5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		D249958A0683682F84D53DA1BCA28F32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		D2AEEBA413F68A916597E71FFC058D98 /* errorIconSubtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D5889B4DFF065BEC9D05E477A2DAAB2 /* errorIconSubtle.png */; };
+		D5EF5A89CF0D19FA5F112A3A05C49089 /* infoIconSubtle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEE13BBD3744655A0A701955B4992365 /* infoIconSubtle@3x.png */; };
+		D6BA6BD4D3942917883A45B8F9D4AD73 /* STPopupControllerTransitioningSlideVertical.h in Headers */ = {isa = PBXBuildFile; fileRef = C81FA0BB6F8768D36AF6C478A3791B11 /* STPopupControllerTransitioningSlideVertical.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D73E08D249CB79BFEB11C824954C04F6 /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53AA036DAFAFC9F5B1002FB65C0E05BB /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA3597173A228966B959BCFB2270459F /* SwiftMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B46B6A21FA870BECDA1A24CAC4AACB /* SwiftMessages.swift */; };
+		DB00EFB3DEC89F9E0C9F083BA865FEEB /* Pods-Eventers-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2FFAD64B7227E59FF631E32B203771 /* Pods-Eventers-dummy.m */; };
+		E05CF1E6836413A592F260F56DFB5C27 /* warningIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 937A6B02E63E931D9917DCACA661ABDA /* warningIcon.png */; };
+		E5AE1924A51CE78A9CE60536D197E201 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9238A80453959CBCA5F8AAF71AE95E /* Weak.swift */; };
+		E64BCCCB806098B9D0973BE0165786EB /* successIconSubtle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28A81FDDA8C75D3C60AD73D334C75188 /* successIconSubtle@2x.png */; };
+		E7E9C884C10C732A4A2A47321A25CA58 /* STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CF0EA2313AA7D923E52C7F0C14320C /* STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA955996245D02A9BDE2B1D00FB9980F /* errorIconLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8543DC7472769A5E711A1C5A5783913F /* errorIconLight@3x.png */; };
+		EBBF2BA28AD03D99AEE90DC34AFCCFA1 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4C1B3D50324F5676F708BB3AF1D69E /* Identifiable.swift */; };
+		ECD4055E060361CA76B11895FA36D17D /* CALayer+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9431584A070493F7667683ACAC729A /* CALayer+Utils.swift */; };
+		ED8BDC30C81B3A393514FC82A1F66CD2 /* MaskingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77ED7F374B87293F993B45A62AFDEE7 /* MaskingView.swift */; };
+		EE69FDDB3F29C76BFC6038AE3C39D413 /* AccessibleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6B2EF99FEDA08D9682CBEF53B5853 /* AccessibleMessage.swift */; };
+		EF6A6361F6AD29E1602B1C27FFDD0B4B /* warningIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 625A0B76DC5FB9002F3699F3990BAACB /* warningIcon@3x.png */; };
+		F59015F8F834130391E064835EC8D781 /* errorIconLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E4A75256463BAD022780BEE27803B2 /* errorIconLight@2x.png */; };
+		F9855C3F84BDE7B36394649CFF666D4F /* successIconLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A356419380E9E3C52887AA41499B571 /* successIconLight.png */; };
+		FB2B87E56FC68DC8A86ECBB47E4F7325 /* STPopupNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C866CD20EF8A5EB6DAD671780ACDD /* STPopupNavigationBar.m */; };
+		FD21CD9F93FA4F2E45F877DE18A98CB4 /* successIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F1A99079A4F6428053E08C939E93DC /* successIcon@3x.png */; };
+		FF0B7D5552686AD60E6F9E6E0FABBB87 /* infoIconLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0253F80D0BE46EE4185D30D757646C0A /* infoIconLight@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B1646C07E9488B656258598D97EC0BA3 /* PBXContainerItemProxy */ = {
+		3157B3AB5A3719A1E711D59038BEE69D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F816A85A3AAF6ADDB04B3277EF18CA9F;
+			remoteGlobalIDString = C037CBC0132577E0A47BEF4E8399EB5E;
 			remoteInfo = TPKeyboardAvoiding;
+		};
+		3953A7CDC8A01C84BB154F8B9FCD17AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD388F1BD6C2AFCC4F60D9B7267A378F;
+			remoteInfo = "SwiftMessages-SwiftMessages";
+		};
+		4309AEEEE5151087457C92E16160ED3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B695461EB492891CE5C150D45FA6279D;
+			remoteInfo = SimpleCheckbox;
+		};
+		9766436CE47596FF48D23B8ADEA6DA59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB45BD98DC84B7058C191EEA36777994;
+			remoteInfo = STPopup;
+		};
+		B224B23A02179FEB63F43256ED977756 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A898472E475845FCC03787BB7AD2F2B;
+			remoteInfo = SwiftMessages;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		022BCD7841222F322B87CD074E6849D5 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		0253F80D0BE46EE4185D30D757646C0A /* infoIconLight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIconLight@3x.png"; path = "SwiftMessages/Resources/infoIconLight@3x.png"; sourceTree = "<group>"; };
+		041774C836BF5C113951F0A2CEF1A113 /* errorIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = errorIcon.png; path = SwiftMessages/Resources/errorIcon.png; sourceTree = "<group>"; };
+		05E06FAADC87F6E111A52D480C1B656E /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
+		080C74BE90DDD8E3E4AB18BEBA5809C2 /* UIViewController+STPopup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+STPopup.m"; path = "STPopup/UIViewController+STPopup.m"; sourceTree = "<group>"; };
+		087EE9F2C2D47C5A5303556702498646 /* STPopupControllerTransitioningSlideVertical.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPopupControllerTransitioningSlideVertical.m; path = STPopup/STPopupControllerTransitioningSlideVertical.m; sourceTree = "<group>"; };
+		08F5583F0C1A116452035BF32B8C09FD /* STPopup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPopup-umbrella.h"; sourceTree = "<group>"; };
 		09A833CE86914E41A019C47C236C9731 /* Pods-Eventers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eventers.debug.xcconfig"; sourceTree = "<group>"; };
-		0D56FB8AD49A130F92799AB2AD34C3F7 /* TPKeyboardAvoiding-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPKeyboardAvoiding-Info.plist"; sourceTree = "<group>"; };
+		0A5B459CE2A444005232814F5667B230 /* BaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseView.swift; path = SwiftMessages/BaseView.swift; sourceTree = "<group>"; };
+		0D2378309B50382A61F1CA311D63B605 /* STPopupLeftBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopupLeftBarItem.h; path = STPopup/STPopupLeftBarItem.h; sourceTree = "<group>"; };
+		0F9431584A070493F7667683ACAC729A /* CALayer+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Utils.swift"; path = "SwiftMessages/CALayer+Utils.swift"; sourceTree = "<group>"; };
+		0FF539689A118A10BCC7CAAAE73219DF /* errorIconSubtle@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIconSubtle@2x.png"; path = "SwiftMessages/Resources/errorIconSubtle@2x.png"; sourceTree = "<group>"; };
+		104C679AEE97A472CD220AEF7C78EE26 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		10A2257237FD6C8681D2B12613B7DAB9 /* Pods-Eventers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Eventers.release.xcconfig"; sourceTree = "<group>"; };
-		128BD5E7B78BDDB54499E6DE686D54F1 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
-		144A1BC8DDF5F416546EB52F0D970A46 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		125DFD91758B5E8F23466AF593A62E1A /* STPopup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPopup-prefix.pch"; sourceTree = "<group>"; };
 		171C2CF2782205B0524CE605CDF40E8E /* Pods-Eventers-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eventers-acknowledgements.plist"; sourceTree = "<group>"; };
-		2174B3DDD8498DA7629AE96EDD2705B4 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
-		44F3B019E7AD1F043159CB37D02EBA4C /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
-		491CBE2F2DB72FF053A3E434D9689CFF /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
-		4C5F0A4D5BE4E8DCFBDA42B29AD3D949 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		18E4A75256463BAD022780BEE27803B2 /* errorIconLight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIconLight@2x.png"; path = "SwiftMessages/Resources/errorIconLight@2x.png"; sourceTree = "<group>"; };
+		1C5280C36442A94CB5E31CCF254969B8 /* STPopup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "STPopup-Info.plist"; sourceTree = "<group>"; };
+		217A59199BE2ABF02D72230DF9C7A437 /* errorIconSubtle@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIconSubtle@3x.png"; path = "SwiftMessages/Resources/errorIconSubtle@3x.png"; sourceTree = "<group>"; };
+		23293BA77FA08FEC385A0F25B24729D1 /* STPopupController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopupController.h; path = STPopup/STPopupController.h; sourceTree = "<group>"; };
+		251DB8BF5EC37EA182AAEC018AF1121E /* UIViewController+STPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+STPopup.h"; path = "STPopup/UIViewController+STPopup.h"; sourceTree = "<group>"; };
+		28A81FDDA8C75D3C60AD73D334C75188 /* successIconSubtle@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "successIconSubtle@2x.png"; path = "SwiftMessages/Resources/successIconSubtle@2x.png"; sourceTree = "<group>"; };
+		2A8F68239925263C7766DAEDEA54C81B /* infoIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = infoIcon.png; path = SwiftMessages/Resources/infoIcon.png; sourceTree = "<group>"; };
+		2AA831A73F5ECD3DD82701C81215CADF /* SimpleCheckbox-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleCheckbox-Info.plist"; sourceTree = "<group>"; };
+		2BC20EF5548A4E99FC8836254FE5530C /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		2FA6BE00B07EE4A36921ECB36EE0A20E /* errorIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIcon@2x.png"; path = "SwiftMessages/Resources/errorIcon@2x.png"; sourceTree = "<group>"; };
+		30AB838AF450764242711F31A705AE2A /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = SwiftMessages/Error.swift; sourceTree = "<group>"; };
+		31B769DD4C4A771B1F489A5CEA195D19 /* StatusLine.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = StatusLine.xib; path = SwiftMessages/Resources/StatusLine.xib; sourceTree = "<group>"; };
+		35E2050A2DE2CA93C7D0083ADBD92536 /* SimpleCheckbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleCheckbox-dummy.m"; sourceTree = "<group>"; };
+		372DD3A8FA6A144A7B631AD8A7C0BAE4 /* STPopupLeftBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPopupLeftBarItem.m; path = STPopup/STPopupLeftBarItem.m; sourceTree = "<group>"; };
+		3EDD818C5E407A4F5AA7986C32EF5682 /* MessageView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MessageView.xib; path = SwiftMessages/Resources/MessageView.xib; sourceTree = "<group>"; };
+		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		42D096F422141E33DDA892755E16DD4B /* SwiftMessages-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMessages-umbrella.h"; sourceTree = "<group>"; };
+		43BB60483C7CECF4C36624C8C7E2ED28 /* Pods_Eventers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Eventers.framework; path = "Pods-Eventers.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4516F0363FE76113972EC237CCBA7D8A /* SwiftMessages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftMessages.framework; path = SwiftMessages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CE3D125F7C53897C0858C1CCBF79A8F /* Pods-Eventers-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Eventers-frameworks.sh"; sourceTree = "<group>"; };
-		68F4B0D25A24ACBF494E0AC361022C5E /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
-		6A51BB632FEFA677E69E93CAD5AE1A07 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
-		6C4A2F0AB7AAA440FAAE48EEAC865476 /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
-		7FEE242D340ADCBFF237890318632008 /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
-		874883FF6EC925F85698B07A6F161D78 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		4D5889B4DFF065BEC9D05E477A2DAAB2 /* errorIconSubtle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = errorIconSubtle.png; path = SwiftMessages/Resources/errorIconSubtle.png; sourceTree = "<group>"; };
+		4D9FF34CCAC8BC4A436B60187BCE3F7E /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = SwiftMessages/Theme.swift; sourceTree = "<group>"; };
+		4EB5D3A92425FAA3F0D81F92C40EBF80 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		517270DC005DE5CD95E946244842E0B8 /* errorIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIcon@3x.png"; path = "SwiftMessages/Resources/errorIcon@3x.png"; sourceTree = "<group>"; };
+		53AA036DAFAFC9F5B1002FB65C0E05BB /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
+		58525BBC5142AB919829E1ACC1B35932 /* SwiftMessages-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftMessages-Info.plist"; sourceTree = "<group>"; };
+		5AD8134A5800E096EAA0B12B95A297AB /* STPopupControllerTransitioningFade.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPopupControllerTransitioningFade.m; path = STPopup/STPopupControllerTransitioningFade.m; sourceTree = "<group>"; };
+		5BEF6DB66653378017A212339719B1B6 /* UIResponder+STPopup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+STPopup.m"; path = "STPopup/UIResponder+STPopup.m"; sourceTree = "<group>"; };
+		5CCBA8515DA332CE1C244C22F0947595 /* Presenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = SwiftMessages/Presenter.swift; sourceTree = "<group>"; };
+		5D0D8CBD73853C11C6229F4BB6D8FD2D /* infoIconLight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIconLight@2x.png"; path = "SwiftMessages/Resources/infoIconLight@2x.png"; sourceTree = "<group>"; };
+		5D42803322B05DB0D415A6431B9C0E92 /* STPopupController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPopupController.m; path = STPopup/STPopupController.m; sourceTree = "<group>"; };
+		5FA28D4F819C563BD6481C109E63AF60 /* STPopup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STPopup.xcconfig; sourceTree = "<group>"; };
+		5FE21EA27E43C52EBB1F9D66D04D8B03 /* STPopupNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopupNavigationBar.h; path = STPopup/STPopupNavigationBar.h; sourceTree = "<group>"; };
+		625A0B76DC5FB9002F3699F3990BAACB /* warningIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIcon@3x.png"; path = "SwiftMessages/Resources/warningIcon@3x.png"; sourceTree = "<group>"; };
+		6392655180CC4358391B493D56BF3712 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		6595600E7E90BBC9B9F7C8368B396A47 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		6CF867B1173135A5CD149CBB5369CB40 /* CornerRoundingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CornerRoundingView.swift; path = SwiftMessages/CornerRoundingView.swift; sourceTree = "<group>"; };
+		6EB81A96F8486834CE0FD396202BE484 /* warningIconLight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = warningIconLight.png; path = SwiftMessages/Resources/warningIconLight.png; sourceTree = "<group>"; };
+		7012D884BED2FDB4FCE3A9A4713517A8 /* successIconLight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "successIconLight@3x.png"; path = "SwiftMessages/Resources/successIconLight@3x.png"; sourceTree = "<group>"; };
+		71CF0EA2313AA7D923E52C7F0C14320C /* STPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopup.h; path = STPopup/STPopup.h; sourceTree = "<group>"; };
+		71FFE7143BF6B87BE01DA050397C3FD7 /* infoIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIcon@3x.png"; path = "SwiftMessages/Resources/infoIcon@3x.png"; sourceTree = "<group>"; };
+		732A6BC4EF5964828AFA2FA78FEFFA24 /* infoIconSubtle@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIconSubtle@2x.png"; path = "SwiftMessages/Resources/infoIconSubtle@2x.png"; sourceTree = "<group>"; };
+		752C866CD20EF8A5EB6DAD671780ACDD /* STPopupNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPopupNavigationBar.m; path = STPopup/STPopupNavigationBar.m; sourceTree = "<group>"; };
+		77A0E0A64EC4F6429E9AA7FA3D341A2B /* warningIconSubtle@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIconSubtle@2x.png"; path = "SwiftMessages/Resources/warningIconSubtle@2x.png"; sourceTree = "<group>"; };
+		78A6B2EF99FEDA08D9682CBEF53B5853 /* AccessibleMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessibleMessage.swift; path = SwiftMessages/AccessibleMessage.swift; sourceTree = "<group>"; };
+		7B746843FDEE52DB64F524FC808AF232 /* STPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = STPopup.framework; path = STPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0CFB996FC15D9DB2D6489AF82FB128 /* PhysicsPanHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhysicsPanHandler.swift; path = SwiftMessages/PhysicsPanHandler.swift; sourceTree = "<group>"; };
+		7E3079EFD5FDFBAD97B7EFD0A6C6972A /* warningIconLight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIconLight@3x.png"; path = "SwiftMessages/Resources/warningIconLight@3x.png"; sourceTree = "<group>"; };
+		7E4BABDDCEA4B1546FE0642D80ED995B /* WindowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WindowViewController.swift; path = SwiftMessages/WindowViewController.swift; sourceTree = "<group>"; };
+		7F1B80566CA18D5B420AEE4EB5DF9CF5 /* PassthroughView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PassthroughView.swift; path = SwiftMessages/PassthroughView.swift; sourceTree = "<group>"; };
+		821A985F8B277F22909DE0643797643F /* BackgroundViewable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundViewable.swift; path = SwiftMessages/BackgroundViewable.swift; sourceTree = "<group>"; };
+		82526EC62668033F642E10803808E394 /* infoIconSubtle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = infoIconSubtle.png; path = SwiftMessages/Resources/infoIconSubtle.png; sourceTree = "<group>"; };
+		8543DC7472769A5E711A1C5A5783913F /* errorIconLight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIconLight@3x.png"; path = "SwiftMessages/Resources/errorIconLight@3x.png"; sourceTree = "<group>"; };
+		8707814EA9BDACC26DC8B1ECFF59003E /* successIconSubtle@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "successIconSubtle@3x.png"; path = "SwiftMessages/Resources/successIconSubtle@3x.png"; sourceTree = "<group>"; };
+		87F616FB9E7C267C13046069F73005F8 /* Checkbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checkbox.swift; path = checkbox/Checkbox.swift; sourceTree = "<group>"; };
+		8960DB53DF565C7891BECCB17EC46D78 /* warningIconSubtle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = warningIconSubtle.png; path = SwiftMessages/Resources/warningIconSubtle.png; sourceTree = "<group>"; };
+		89888DE5DB3C0309CBA96FBED706A5D4 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		8A63DE15DA386537B1C19EA72B48C9EB /* successIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = successIcon.png; path = SwiftMessages/Resources/successIcon.png; sourceTree = "<group>"; };
+		8B4C1B3D50324F5676F708BB3AF1D69E /* Identifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = SwiftMessages/Identifiable.swift; sourceTree = "<group>"; };
+		8B5FE8EC543875FEBECAD9C6A4970E1A /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		8D28CCB5F6FBB71F02E35F4FBAF87A2E /* SimpleCheckbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleCheckbox-prefix.pch"; sourceTree = "<group>"; };
+		8F332F5C988E3293B8CC0969DF201A19 /* MarginAdjustable+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MarginAdjustable+Animation.swift"; path = "SwiftMessages/MarginAdjustable+Animation.swift"; sourceTree = "<group>"; };
+		9130424BFFCC4F552066377FA346691F /* warningIconLight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIconLight@2x.png"; path = "SwiftMessages/Resources/warningIconLight@2x.png"; sourceTree = "<group>"; };
+		933B86D12F338678EC3F6235316D8307 /* warningIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIcon@2x.png"; path = "SwiftMessages/Resources/warningIcon@2x.png"; sourceTree = "<group>"; };
+		937A6B02E63E931D9917DCACA661ABDA /* warningIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = warningIcon.png; path = SwiftMessages/Resources/warningIcon.png; sourceTree = "<group>"; };
 		982F0F66266FA17693934E8F99BC7867 /* Pods-Eventers.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Eventers.modulemap"; sourceTree = "<group>"; };
+		9A356419380E9E3C52887AA41499B571 /* successIconLight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = successIconLight.png; path = SwiftMessages/Resources/successIconLight.png; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3EACA819A7FF2E61A41A4FDE267AEE2 /* Pods_Eventers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Eventers.framework; path = "Pods-Eventers.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E617366A934EE9C6C9DF0471E6A6300 /* TopBottomAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TopBottomAnimation.swift; path = SwiftMessages/TopBottomAnimation.swift; sourceTree = "<group>"; };
+		9FFEC1FA82098BF62992AEA3F40C2ED1 /* SwiftMessages.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftMessages.modulemap; sourceTree = "<group>"; };
+		A245D19E5EF2EAA5C925F1F61E2D170F /* SwiftMessages.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMessages.xcconfig; sourceTree = "<group>"; };
+		A39036AD2169F1F2E6D373445AA5C4F2 /* successIconSubtle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = successIconSubtle.png; path = SwiftMessages/Resources/successIconSubtle.png; sourceTree = "<group>"; };
 		AA2FFAD64B7227E59FF631E32B203771 /* Pods-Eventers-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Eventers-dummy.m"; sourceTree = "<group>"; };
-		AA6703E89A18FA19C2CD0816CEDD9872 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPKeyboardAvoiding.framework; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DF3802FCF75AE1D4AF24E7EFFFECDA47 /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
+		B1AF9B5CB8B5D4A7D2C32E49F5A5C441 /* UIEdgeInsets+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIEdgeInsets+Utils.swift"; path = "SwiftMessages/UIEdgeInsets+Utils.swift"; sourceTree = "<group>"; };
+		B3DF45C2909446A0FC4A7ECF9FA415A9 /* warningIconSubtle@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIconSubtle@3x.png"; path = "SwiftMessages/Resources/warningIconSubtle@3x.png"; sourceTree = "<group>"; };
+		B47823038696E5236B91CB1BF946EF9C /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = SwiftMessages/Animator.swift; sourceTree = "<group>"; };
+		B5F1A99079A4F6428053E08C939E93DC /* successIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "successIcon@3x.png"; path = "SwiftMessages/Resources/successIcon@3x.png"; sourceTree = "<group>"; };
+		B89AC7E86B30B6CF8525EA0A00D21FE4 /* STPopupControllerTransitioningFade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopupControllerTransitioningFade.h; path = STPopup/STPopupControllerTransitioningFade.h; sourceTree = "<group>"; };
+		B95239B77248A48DE83314510D313B34 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Utils.swift"; path = "SwiftMessages/UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		BBF03712901581D52A5EABCBA58C1B81 /* TPKeyboardAvoiding-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPKeyboardAvoiding-Info.plist"; sourceTree = "<group>"; };
+		BF9699F55B2238FC84D7AF9108EAF07E /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPKeyboardAvoiding.framework; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09F53068E292BBDF8ADA985C24FFB68 /* UIResponder+STPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+STPopup.h"; path = "STPopup/UIResponder+STPopup.h"; sourceTree = "<group>"; };
+		C14568B12D9141B5455A0A73FE574C2B /* ViewControllerContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewControllerContainerView.swift; path = SwiftMessages/ViewControllerContainerView.swift; sourceTree = "<group>"; };
+		C1C2EC79FA16B04CE6C83A1B046FDB23 /* STPopup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = STPopup.modulemap; sourceTree = "<group>"; };
+		C2CE857A17658B07E7E6B3B77CCAD3F1 /* PassthroughWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PassthroughWindow.swift; path = SwiftMessages/PassthroughWindow.swift; sourceTree = "<group>"; };
+		C33A57FACB531B5AC818479A376F7F0B /* infoIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIcon@2x.png"; path = "SwiftMessages/Resources/infoIcon@2x.png"; sourceTree = "<group>"; };
+		C3B21E8F71103C6DE71FBED11BC1E3A4 /* NSBundle+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSBundle+Utils.swift"; path = "SwiftMessages/NSBundle+Utils.swift"; sourceTree = "<group>"; };
+		C525BE7E63A64F6AB7C9FA87DE26BE3C /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+		C57FB1C455A8C3DC5412E29FC16CB895 /* MarginAdjustable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarginAdjustable.swift; path = SwiftMessages/MarginAdjustable.swift; sourceTree = "<group>"; };
+		C71C20380B008FC331F3F7DD4547293D /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		C77ED7F374B87293F993B45A62AFDEE7 /* MaskingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskingView.swift; path = SwiftMessages/MaskingView.swift; sourceTree = "<group>"; };
+		C81FA0BB6F8768D36AF6C478A3791B11 /* STPopupControllerTransitioningSlideVertical.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopupControllerTransitioningSlideVertical.h; path = STPopup/STPopupControllerTransitioningSlideVertical.h; sourceTree = "<group>"; };
+		CA0FEEE11EBD479A247389423F70FB2A /* SimpleCheckbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleCheckbox.framework; path = SimpleCheckbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA59DA2015DC54EF24143D76113444F8 /* SwiftMessages-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMessages-dummy.m"; sourceTree = "<group>"; };
+		CADE52D10E77FD031A0C268B38331D00 /* SwiftMessagesSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftMessagesSegue.swift; path = SwiftMessages/SwiftMessagesSegue.swift; sourceTree = "<group>"; };
+		CCB94E66C307102FC36DFD29F799469B /* Array+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Utils.swift"; path = "SwiftMessages/Array+Utils.swift"; sourceTree = "<group>"; };
+		CD244D58FE08278F729580C4A919027C /* ResourceBundle-SwiftMessages-SwiftMessages-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SwiftMessages-SwiftMessages-Info.plist"; sourceTree = "<group>"; };
+		CE94DE590D6ED30933C5179547B5E040 /* CardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CardView.xib; path = SwiftMessages/Resources/CardView.xib; sourceTree = "<group>"; };
+		D84CF5EBCA94BE0F4B94BED4697322F4 /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
+		D8B54147B5577EAAC91AB06F64383D3D /* infoIconLight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = infoIconLight.png; path = SwiftMessages/Resources/infoIconLight.png; sourceTree = "<group>"; };
+		D8B624744F3560F6D0D53D31042296BC /* SimpleCheckbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleCheckbox.xcconfig; sourceTree = "<group>"; };
+		DD6AEDD4525C44B0FDC6BD9E23C2745B /* STPopup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STPopup-dummy.m"; sourceTree = "<group>"; };
+		E020DF7550A39178580BE122E281B13D /* SimpleCheckbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleCheckbox.modulemap; sourceTree = "<group>"; };
+		E2745F25431F9377ECEA018ACFD84C1C /* MessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageView.swift; path = SwiftMessages/MessageView.swift; sourceTree = "<group>"; };
+		E2BBA85B0083FCD8C20C8DBB53F3359F /* CenteredView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CenteredView.xib; path = SwiftMessages/Resources/CenteredView.xib; sourceTree = "<group>"; };
+		E6290FDFE90A51D023C8B3FC693162EF /* errorIconLight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = errorIconLight.png; path = SwiftMessages/Resources/errorIconLight.png; sourceTree = "<group>"; };
+		E7B46B6A21FA870BECDA1A24CAC4AACB /* SwiftMessages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftMessages.swift; path = SwiftMessages/SwiftMessages.swift; sourceTree = "<group>"; };
+		EA9238A80453959CBCA5F8AAF71AE95E /* Weak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Weak.swift; path = SwiftMessages/Weak.swift; sourceTree = "<group>"; };
+		EBC3CF2134D187D14454E077144F099B /* SwiftMessages.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SwiftMessages.bundle; path = "SwiftMessages-SwiftMessages.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4F678F14624224FB2F60A95268D944 /* Pods-Eventers-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Eventers-Info.plist"; sourceTree = "<group>"; };
+		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F246FB41D34B4537B4010EAD7EB11EB9 /* successIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "successIcon@2x.png"; path = "SwiftMessages/Resources/successIcon@2x.png"; sourceTree = "<group>"; };
 		F32FC6C82F569E04B6AE3408EB7DD1FD /* Pods-Eventers-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Eventers-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F907245CD991CB5B9026EEE380E1319F /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		F68136C3CD113518887BD159F59A138B /* SimpleCheckbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleCheckbox-umbrella.h"; sourceTree = "<group>"; };
+		F96769DFD6813DC61E1A74A00136812C /* TabView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TabView.xib; path = SwiftMessages/Resources/TabView.xib; sourceTree = "<group>"; };
 		FAB810581806B12F8284C3527A08A6B9 /* Pods-Eventers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Eventers-umbrella.h"; sourceTree = "<group>"; };
+		FB2D618677223F55820AEC9BE2AD6529 /* PhysicsAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhysicsAnimation.swift; path = SwiftMessages/PhysicsAnimation.swift; sourceTree = "<group>"; };
+		FD88377FEA0EF68D8F299365E9149AB8 /* successIconLight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "successIconLight@2x.png"; path = "SwiftMessages/Resources/successIconLight@2x.png"; sourceTree = "<group>"; };
+		FDA158D3B8799B8C4D70B1DCFA20AFC5 /* SwiftMessages-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMessages-prefix.pch"; sourceTree = "<group>"; };
+		FEE13BBD3744655A0A701955B4992365 /* infoIconSubtle@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIconSubtle@3x.png"; path = "SwiftMessages/Resources/infoIconSubtle@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88C1D8487563327D3031286E86FA089B /* Frameworks */ = {
+		07A27910188AA489D087EA329BC6C985 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0F43FA362ABA935DCE2294C881177A1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF37DDB5FEDAC23902187A494AF52900 /* Frameworks */ = {
+		2767A73E3CD771CE6A2F88956E6D626B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52000E7C21396B4929C68ACFD4D71A70 /* Foundation.framework in Frameworks */,
+				D249958A0683682F84D53DA1BCA28F32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		604A86451E8288F3C38F4B6F2A6A7E60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E53D37B4189360211D446204AA6F5E /* Foundation.framework in Frameworks */,
+				0183C4B36468689874DA2C6999C7499C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91D73CEA29F91C1ED1DE8D3D896C43A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C90E6D5887E0BF274497D5AB6B72BC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEEA0CF926C28B63BCBB2373674C33AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE52EF3CC84D210146081B719A45C0EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9FAD426F7AC54030781805C4FF29505 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3951BEC850C011767A4516C9A9499772 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C6F7B1F3B87DA5BCE0C1D591D9CF402 /* Support Files */ = {
+		13FCBCB1CA2930725866FEB0E981DD59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44F3B019E7AD1F043159CB37D02EBA4C /* TPKeyboardAvoiding.modulemap */,
-				7FEE242D340ADCBFF237890318632008 /* TPKeyboardAvoiding.xcconfig */,
-				DF3802FCF75AE1D4AF24E7EFFFECDA47 /* TPKeyboardAvoiding-dummy.m */,
-				0D56FB8AD49A130F92799AB2AD34C3F7 /* TPKeyboardAvoiding-Info.plist */,
-				F907245CD991CB5B9026EEE380E1319F /* TPKeyboardAvoiding-prefix.pch */,
-				6C4A2F0AB7AAA440FAAE48EEAC865476 /* TPKeyboardAvoiding-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TPKeyboardAvoiding";
-			sourceTree = "<group>";
-		};
-		29E2472F85E3C32555D95BD55877A1C9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A3EACA819A7FF2E61A41A4FDE267AEE2 /* Pods_Eventers.framework */,
-				AA6703E89A18FA19C2CD0816CEDD9872 /* TPKeyboardAvoiding.framework */,
+				43BB60483C7CECF4C36624C8C7E2ED28 /* Pods_Eventers.framework */,
+				CA0FEEE11EBD479A247389423F70FB2A /* SimpleCheckbox.framework */,
+				7B746843FDEE52DB64F524FC808AF232 /* STPopup.framework */,
+				EBC3CF2134D187D14454E077144F099B /* SwiftMessages.bundle */,
+				4516F0363FE76113972EC237CCBA7D8A /* SwiftMessages.framework */,
+				BF9699F55B2238FC84D7AF9108EAF07E /* TPKeyboardAvoiding.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E169A450ED27AC725DF52953F66D11E0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		247C260C0EFB2A53C8F00FE25522FD21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE94DE590D6ED30933C5179547B5E040 /* CardView.xib */,
+				E2BBA85B0083FCD8C20C8DBB53F3359F /* CenteredView.xib */,
+				041774C836BF5C113951F0A2CEF1A113 /* errorIcon.png */,
+				2FA6BE00B07EE4A36921ECB36EE0A20E /* errorIcon@2x.png */,
+				517270DC005DE5CD95E946244842E0B8 /* errorIcon@3x.png */,
+				E6290FDFE90A51D023C8B3FC693162EF /* errorIconLight.png */,
+				18E4A75256463BAD022780BEE27803B2 /* errorIconLight@2x.png */,
+				8543DC7472769A5E711A1C5A5783913F /* errorIconLight@3x.png */,
+				4D5889B4DFF065BEC9D05E477A2DAAB2 /* errorIconSubtle.png */,
+				0FF539689A118A10BCC7CAAAE73219DF /* errorIconSubtle@2x.png */,
+				217A59199BE2ABF02D72230DF9C7A437 /* errorIconSubtle@3x.png */,
+				2A8F68239925263C7766DAEDEA54C81B /* infoIcon.png */,
+				C33A57FACB531B5AC818479A376F7F0B /* infoIcon@2x.png */,
+				71FFE7143BF6B87BE01DA050397C3FD7 /* infoIcon@3x.png */,
+				D8B54147B5577EAAC91AB06F64383D3D /* infoIconLight.png */,
+				5D0D8CBD73853C11C6229F4BB6D8FD2D /* infoIconLight@2x.png */,
+				0253F80D0BE46EE4185D30D757646C0A /* infoIconLight@3x.png */,
+				82526EC62668033F642E10803808E394 /* infoIconSubtle.png */,
+				732A6BC4EF5964828AFA2FA78FEFFA24 /* infoIconSubtle@2x.png */,
+				FEE13BBD3744655A0A701955B4992365 /* infoIconSubtle@3x.png */,
+				3EDD818C5E407A4F5AA7986C32EF5682 /* MessageView.xib */,
+				31B769DD4C4A771B1F489A5CEA195D19 /* StatusLine.xib */,
+				8A63DE15DA386537B1C19EA72B48C9EB /* successIcon.png */,
+				F246FB41D34B4537B4010EAD7EB11EB9 /* successIcon@2x.png */,
+				B5F1A99079A4F6428053E08C939E93DC /* successIcon@3x.png */,
+				9A356419380E9E3C52887AA41499B571 /* successIconLight.png */,
+				FD88377FEA0EF68D8F299365E9149AB8 /* successIconLight@2x.png */,
+				7012D884BED2FDB4FCE3A9A4713517A8 /* successIconLight@3x.png */,
+				A39036AD2169F1F2E6D373445AA5C4F2 /* successIconSubtle.png */,
+				28A81FDDA8C75D3C60AD73D334C75188 /* successIconSubtle@2x.png */,
+				8707814EA9BDACC26DC8B1ECFF59003E /* successIconSubtle@3x.png */,
+				F96769DFD6813DC61E1A74A00136812C /* TabView.xib */,
+				937A6B02E63E931D9917DCACA661ABDA /* warningIcon.png */,
+				933B86D12F338678EC3F6235316D8307 /* warningIcon@2x.png */,
+				625A0B76DC5FB9002F3699F3990BAACB /* warningIcon@3x.png */,
+				6EB81A96F8486834CE0FD396202BE484 /* warningIconLight.png */,
+				9130424BFFCC4F552066377FA346691F /* warningIconLight@2x.png */,
+				7E3079EFD5FDFBAD97B7EFD0A6C6972A /* warningIconLight@3x.png */,
+				8960DB53DF565C7891BECCB17EC46D78 /* warningIconSubtle.png */,
+				77A0E0A64EC4F6429E9AA7FA3D341A2B /* warningIconSubtle@2x.png */,
+				B3DF45C2909446A0FC4A7ECF9FA415A9 /* warningIconSubtle@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		31542C93403BD3DA9A06246DA1C7E1D7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD244D58FE08278F729580C4A919027C /* ResourceBundle-SwiftMessages-SwiftMessages-Info.plist */,
+				9FFEC1FA82098BF62992AEA3F40C2ED1 /* SwiftMessages.modulemap */,
+				A245D19E5EF2EAA5C925F1F61E2D170F /* SwiftMessages.xcconfig */,
+				CA59DA2015DC54EF24143D76113444F8 /* SwiftMessages-dummy.m */,
+				58525BBC5142AB919829E1ACC1B35932 /* SwiftMessages-Info.plist */,
+				FDA158D3B8799B8C4D70B1DCFA20AFC5 /* SwiftMessages-prefix.pch */,
+				42D096F422141E33DDA892755E16DD4B /* SwiftMessages-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftMessages";
 			sourceTree = "<group>";
 		};
 		344F62E5AFE710771DB33003B7CF9049 /* Pods-Eventers */ = {
@@ -123,6 +449,47 @@
 			path = "Target Support Files/Pods-Eventers";
 			sourceTree = "<group>";
 		};
+		3A04AB2DA47F7187B0BFC6D93B7F8416 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C525BE7E63A64F6AB7C9FA87DE26BE3C /* TPKeyboardAvoiding.modulemap */,
+				D84CF5EBCA94BE0F4B94BED4697322F4 /* TPKeyboardAvoiding.xcconfig */,
+				05E06FAADC87F6E111A52D480C1B656E /* TPKeyboardAvoiding-dummy.m */,
+				BBF03712901581D52A5EABCBA58C1B81 /* TPKeyboardAvoiding-Info.plist */,
+				8B5FE8EC543875FEBECAD9C6A4970E1A /* TPKeyboardAvoiding-prefix.pch */,
+				53AA036DAFAFC9F5B1002FB65C0E05BB /* TPKeyboardAvoiding-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TPKeyboardAvoiding";
+			sourceTree = "<group>";
+		};
+		4895F4579003A08349D8068735CB8711 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				2BC20EF5548A4E99FC8836254FE5530C /* TPKeyboardAvoidingCollectionView.h */,
+				89888DE5DB3C0309CBA96FBED706A5D4 /* TPKeyboardAvoidingCollectionView.m */,
+				C71C20380B008FC331F3F7DD4547293D /* TPKeyboardAvoidingScrollView.h */,
+				104C679AEE97A472CD220AEF7C78EE26 /* TPKeyboardAvoidingScrollView.m */,
+				022BCD7841222F322B87CD074E6849D5 /* TPKeyboardAvoidingTableView.h */,
+				6595600E7E90BBC9B9F7C8368B396A47 /* TPKeyboardAvoidingTableView.m */,
+				4EB5D3A92425FAA3F0D81F92C40EBF80 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				6392655180CC4358391B493D56BF3712 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				3A04AB2DA47F7187B0BFC6D93B7F8416 /* Support Files */,
+			);
+			name = TPKeyboardAvoiding;
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		4E87E278EA974D381E20266B1D7CD1FC /* SwiftMessages */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD71A0A7FCE73B45995687F845DE0C /* App */,
+				31542C93403BD3DA9A06246DA1C7E1D7 /* Support Files */,
+			);
+			name = SwiftMessages;
+			path = SwiftMessages;
+			sourceTree = "<group>";
+		};
 		5F2E9C0FCDD33B3BF2D4FFBEBE96FF8A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,111 +498,260 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		74E073297394C3812B8B4DA1A9532EDD /* Pods */ = {
+		613AA9068F0ED9AC77A99F997C3376CD /* STPopup */ = {
 			isa = PBXGroup;
 			children = (
-				885EA60AA0E002D825C1F57477263EC9 /* TPKeyboardAvoiding */,
+				71CF0EA2313AA7D923E52C7F0C14320C /* STPopup.h */,
+				23293BA77FA08FEC385A0F25B24729D1 /* STPopupController.h */,
+				5D42803322B05DB0D415A6431B9C0E92 /* STPopupController.m */,
+				B89AC7E86B30B6CF8525EA0A00D21FE4 /* STPopupControllerTransitioningFade.h */,
+				5AD8134A5800E096EAA0B12B95A297AB /* STPopupControllerTransitioningFade.m */,
+				C81FA0BB6F8768D36AF6C478A3791B11 /* STPopupControllerTransitioningSlideVertical.h */,
+				087EE9F2C2D47C5A5303556702498646 /* STPopupControllerTransitioningSlideVertical.m */,
+				0D2378309B50382A61F1CA311D63B605 /* STPopupLeftBarItem.h */,
+				372DD3A8FA6A144A7B631AD8A7C0BAE4 /* STPopupLeftBarItem.m */,
+				5FE21EA27E43C52EBB1F9D66D04D8B03 /* STPopupNavigationBar.h */,
+				752C866CD20EF8A5EB6DAD671780ACDD /* STPopupNavigationBar.m */,
+				C09F53068E292BBDF8ADA985C24FFB68 /* UIResponder+STPopup.h */,
+				5BEF6DB66653378017A212339719B1B6 /* UIResponder+STPopup.m */,
+				251DB8BF5EC37EA182AAEC018AF1121E /* UIViewController+STPopup.h */,
+				080C74BE90DDD8E3E4AB18BEBA5809C2 /* UIViewController+STPopup.m */,
+				9AD101CCD79A85645C6BDE666C47058E /* Support Files */,
+			);
+			name = STPopup;
+			path = STPopup;
+			sourceTree = "<group>";
+		};
+		699FAA504CC4F4E6196744C3D278357D /* SimpleCheckbox */ = {
+			isa = PBXGroup;
+			children = (
+				87F616FB9E7C267C13046069F73005F8 /* Checkbox.swift */,
+				CBED79A3C2153780229D7A6AB9F26F6D /* Support Files */,
+			);
+			name = SimpleCheckbox;
+			path = SimpleCheckbox;
+			sourceTree = "<group>";
+		};
+		9AD101CCD79A85645C6BDE666C47058E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1C2EC79FA16B04CE6C83A1B046FDB23 /* STPopup.modulemap */,
+				5FA28D4F819C563BD6481C109E63AF60 /* STPopup.xcconfig */,
+				DD6AEDD4525C44B0FDC6BD9E23C2745B /* STPopup-dummy.m */,
+				1C5280C36442A94CB5E31CCF254969B8 /* STPopup-Info.plist */,
+				125DFD91758B5E8F23466AF593A62E1A /* STPopup-prefix.pch */,
+				08F5583F0C1A116452035BF32B8C09FD /* STPopup-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/STPopup";
+			sourceTree = "<group>";
+		};
+		A7BFC404B8E672BFBE9DAAD1641768C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				699FAA504CC4F4E6196744C3D278357D /* SimpleCheckbox */,
+				613AA9068F0ED9AC77A99F997C3376CD /* STPopup */,
+				4E87E278EA974D381E20266B1D7CD1FC /* SwiftMessages */,
+				4895F4579003A08349D8068735CB8711 /* TPKeyboardAvoiding */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		885EA60AA0E002D825C1F57477263EC9 /* TPKeyboardAvoiding */ = {
+		CBED79A3C2153780229D7A6AB9F26F6D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2174B3DDD8498DA7629AE96EDD2705B4 /* TPKeyboardAvoidingCollectionView.h */,
-				128BD5E7B78BDDB54499E6DE686D54F1 /* TPKeyboardAvoidingCollectionView.m */,
-				6A51BB632FEFA677E69E93CAD5AE1A07 /* TPKeyboardAvoidingScrollView.h */,
-				491CBE2F2DB72FF053A3E434D9689CFF /* TPKeyboardAvoidingScrollView.m */,
-				4C5F0A4D5BE4E8DCFBDA42B29AD3D949 /* TPKeyboardAvoidingTableView.h */,
-				874883FF6EC925F85698B07A6F161D78 /* TPKeyboardAvoidingTableView.m */,
-				68F4B0D25A24ACBF494E0AC361022C5E /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
-				144A1BC8DDF5F416546EB52F0D970A46 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
-				1C6F7B1F3B87DA5BCE0C1D591D9CF402 /* Support Files */,
+				E020DF7550A39178580BE122E281B13D /* SimpleCheckbox.modulemap */,
+				D8B624744F3560F6D0D53D31042296BC /* SimpleCheckbox.xcconfig */,
+				35E2050A2DE2CA93C7D0083ADBD92536 /* SimpleCheckbox-dummy.m */,
+				2AA831A73F5ECD3DD82701C81215CADF /* SimpleCheckbox-Info.plist */,
+				8D28CCB5F6FBB71F02E35F4FBAF87A2E /* SimpleCheckbox-prefix.pch */,
+				F68136C3CD113518887BD159F59A138B /* SimpleCheckbox-umbrella.h */,
 			);
-			name = TPKeyboardAvoiding;
-			path = TPKeyboardAvoiding;
-			sourceTree = "<group>";
-		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
-			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/SimpleCheckbox";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				74E073297394C3812B8B4DA1A9532EDD /* Pods */,
-				29E2472F85E3C32555D95BD55877A1C9 /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				A7BFC404B8E672BFBE9DAAD1641768C2 /* Pods */,
+				13FCBCB1CA2930725866FEB0E981DD59 /* Products */,
 				5F2E9C0FCDD33B3BF2D4FFBEBE96FF8A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D8FD71A0A7FCE73B45995687F845DE0C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				78A6B2EF99FEDA08D9682CBEF53B5853 /* AccessibleMessage.swift */,
+				B47823038696E5236B91CB1BF946EF9C /* Animator.swift */,
+				CCB94E66C307102FC36DFD29F799469B /* Array+Utils.swift */,
+				821A985F8B277F22909DE0643797643F /* BackgroundViewable.swift */,
+				0A5B459CE2A444005232814F5667B230 /* BaseView.swift */,
+				0F9431584A070493F7667683ACAC729A /* CALayer+Utils.swift */,
+				6CF867B1173135A5CD149CBB5369CB40 /* CornerRoundingView.swift */,
+				30AB838AF450764242711F31A705AE2A /* Error.swift */,
+				8B4C1B3D50324F5676F708BB3AF1D69E /* Identifiable.swift */,
+				C57FB1C455A8C3DC5412E29FC16CB895 /* MarginAdjustable.swift */,
+				8F332F5C988E3293B8CC0969DF201A19 /* MarginAdjustable+Animation.swift */,
+				C77ED7F374B87293F993B45A62AFDEE7 /* MaskingView.swift */,
+				E2745F25431F9377ECEA018ACFD84C1C /* MessageView.swift */,
+				C3B21E8F71103C6DE71FBED11BC1E3A4 /* NSBundle+Utils.swift */,
+				7F1B80566CA18D5B420AEE4EB5DF9CF5 /* PassthroughView.swift */,
+				C2CE857A17658B07E7E6B3B77CCAD3F1 /* PassthroughWindow.swift */,
+				FB2D618677223F55820AEC9BE2AD6529 /* PhysicsAnimation.swift */,
+				7D0CFB996FC15D9DB2D6489AF82FB128 /* PhysicsPanHandler.swift */,
+				5CCBA8515DA332CE1C244C22F0947595 /* Presenter.swift */,
+				E7B46B6A21FA870BECDA1A24CAC4AACB /* SwiftMessages.swift */,
+				CADE52D10E77FD031A0C268B38331D00 /* SwiftMessagesSegue.swift */,
+				4D9FF34CCAC8BC4A436B60187BCE3F7E /* Theme.swift */,
+				9E617366A934EE9C6C9DF0471E6A6300 /* TopBottomAnimation.swift */,
+				B1AF9B5CB8B5D4A7D2C32E49F5A5C441 /* UIEdgeInsets+Utils.swift */,
+				B95239B77248A48DE83314510D313B34 /* UIViewController+Utils.swift */,
+				C14568B12D9141B5455A0A73FE574C2B /* ViewControllerContainerView.swift */,
+				EA9238A80453959CBCA5F8AAF71AE95E /* Weak.swift */,
+				7E4BABDDCEA4B1546FE0642D80ED995B /* WindowViewController.swift */,
+				247C260C0EFB2A53C8F00FE25522FD21 /* Resources */,
 			);
-			name = Frameworks;
+			name = App;
+			sourceTree = "<group>";
+		};
+		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */,
+				ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1BB4D36AED79654BB0A234016BF8C164 /* Headers */ = {
+		4D3BECCEE8DC024716DCD6333D49DB56 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8612D00EA7C5A9922B25110DED33ADDC /* Pods-Eventers-umbrella.h in Headers */,
+				3E2AA462F3112B17F7009C779995E779 /* Pods-Eventers-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3AAF8AE76D5DA45D128E051BA0528E0D /* Headers */ = {
+		8E73AC686FFF18A29AB8E9FEEA022D25 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289AF2A8FAA57F260D3893ACCFCC3CA0 /* TPKeyboardAvoiding-umbrella.h in Headers */,
-				A6DD8D2323A3363E7043D6275D28D143 /* TPKeyboardAvoidingCollectionView.h in Headers */,
-				CC15D287DC2766591075BA77DA45ADFE /* TPKeyboardAvoidingScrollView.h in Headers */,
-				54102BD3FDE5FF43647C31B56E43B968 /* TPKeyboardAvoidingTableView.h in Headers */,
-				BC31DBB1233B1BBF443B3E374324E24E /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
+				D73E08D249CB79BFEB11C824954C04F6 /* TPKeyboardAvoiding-umbrella.h in Headers */,
+				756F66C6DBE4642965DEE832B8C28F28 /* TPKeyboardAvoidingCollectionView.h in Headers */,
+				A0B90FCA41F62ACBC30C863F834E917D /* TPKeyboardAvoidingScrollView.h in Headers */,
+				05C44EEC177482C35B66B2271C5AAA95 /* TPKeyboardAvoidingTableView.h in Headers */,
+				9609AA4DB24F59781194DAB8DB0653D3 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94DA3D7548084400395B33F1BA458882 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EC5543EBEE7E1FCAD638CF9AEFB137A /* STPopup-umbrella.h in Headers */,
+				E7E9C884C10C732A4A2A47321A25CA58 /* STPopup.h in Headers */,
+				A8718617A51B28D704988EAD32BB78C9 /* STPopupController.h in Headers */,
+				BE546ADC528B3CAC6AD41A627D5CA087 /* STPopupControllerTransitioningFade.h in Headers */,
+				D6BA6BD4D3942917883A45B8F9D4AD73 /* STPopupControllerTransitioningSlideVertical.h in Headers */,
+				00AEC92425F14BC9563BC5ECF6CBD002 /* STPopupLeftBarItem.h in Headers */,
+				B940641731E9C8D45ED6DD6B42E1FED2 /* STPopupNavigationBar.h in Headers */,
+				7ACE7C3119C886F592364051645C0F0E /* UIResponder+STPopup.h in Headers */,
+				78CEDE9D730844F26050C25C92BE483A /* UIViewController+STPopup.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8AACFE3DAB620C76E4C7BD1F79F4B17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF24F2F8A7133E13C29C151E140B60A /* SimpleCheckbox-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86DFDFFC02800A019DD1A922EAD634D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52AE8B4D3ECEA49709B0961D97597F38 /* SwiftMessages-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		42AC9C6D6E278C02E43F6854789C9A39 /* Pods-Eventers */ = {
+		4A898472E475845FCC03787BB7AD2F2B /* SwiftMessages */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18A92B7BC0FA1AABD52A1E6968961731 /* Build configuration list for PBXNativeTarget "Pods-Eventers" */;
+			buildConfigurationList = 94A6F2B1B6709039336B61689BBA1E7C /* Build configuration list for PBXNativeTarget "SwiftMessages" */;
 			buildPhases = (
-				1BB4D36AED79654BB0A234016BF8C164 /* Headers */,
-				0FFC61A420B73AA6D0420FBEC241212F /* Sources */,
-				AF37DDB5FEDAC23902187A494AF52900 /* Frameworks */,
-				E00DE388E6E60A412EBD375164F3747E /* Resources */,
+				D86DFDFFC02800A019DD1A922EAD634D /* Headers */,
+				8AB08B4604E29022B809AD9792DF6CE2 /* Sources */,
+				604A86451E8288F3C38F4B6F2A6A7E60 /* Frameworks */,
+				562F2576424CCEC0F72392B457F8319C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BA97EED66B619E9CD155CFB8A4952062 /* PBXTargetDependency */,
+				4D67C9F7320CEA7232453443E978EEF0 /* PBXTargetDependency */,
+			);
+			name = SwiftMessages;
+			productName = SwiftMessages;
+			productReference = 4516F0363FE76113972EC237CCBA7D8A /* SwiftMessages.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9135E4CC75DA643F99BC22924C26EFD9 /* Pods-Eventers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 590E91AB55B976512FBBE0E27535FB5F /* Build configuration list for PBXNativeTarget "Pods-Eventers" */;
+			buildPhases = (
+				4D3BECCEE8DC024716DCD6333D49DB56 /* Headers */,
+				6BA93E7FFBC82FDE9807A0A3D7A994A2 /* Sources */,
+				BEEA0CF926C28B63BCBB2373674C33AB /* Frameworks */,
+				74F58311154EF692082AB4C921989BB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31CF2D44D0168DEC0559C98BF88E6452 /* PBXTargetDependency */,
+				D4717F113406D6AEEF7C4751AD228C6A /* PBXTargetDependency */,
+				E470C352B63E9B35ED3299CC77D58866 /* PBXTargetDependency */,
+				0120277A707E76C3DD631ABDCC9FB0E9 /* PBXTargetDependency */,
 			);
 			name = "Pods-Eventers";
 			productName = "Pods-Eventers";
-			productReference = A3EACA819A7FF2E61A41A4FDE267AEE2 /* Pods_Eventers.framework */;
+			productReference = 43BB60483C7CECF4C36624C8C7E2ED28 /* Pods_Eventers.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F816A85A3AAF6ADDB04B3277EF18CA9F /* TPKeyboardAvoiding */ = {
+		B695461EB492891CE5C150D45FA6279D /* SimpleCheckbox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04738D9BD55980853C4F7AF2B57C15CF /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
+			buildConfigurationList = BEDBA7B05CC7DF2A229940EA8020EED1 /* Build configuration list for PBXNativeTarget "SimpleCheckbox" */;
 			buildPhases = (
-				3AAF8AE76D5DA45D128E051BA0528E0D /* Headers */,
-				07CCDE5459EA5F6DD839B80E1CC586EE /* Sources */,
-				88C1D8487563327D3031286E86FA089B /* Frameworks */,
-				56C7EFB48542BAC0D56BFAC2D1B40381 /* Resources */,
+				C8AACFE3DAB620C76E4C7BD1F79F4B17 /* Headers */,
+				45285F48E7587ABDEFD3D5A59268DDAC /* Sources */,
+				D9FAD426F7AC54030781805C4FF29505 /* Frameworks */,
+				55712DB9F907D44117ADB0EE1C14254C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleCheckbox;
+			productName = SimpleCheckbox;
+			productReference = CA0FEEE11EBD479A247389423F70FB2A /* SimpleCheckbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C037CBC0132577E0A47BEF4E8399EB5E /* TPKeyboardAvoiding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15464D7685B2C3219E075A4CA873940 /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
+			buildPhases = (
+				8E73AC686FFF18A29AB8E9FEEA022D25 /* Headers */,
+				A1CD7679748828876E58A23D4F139D72 /* Sources */,
+				91D73CEA29F91C1ED1DE8D3D896C43A1 /* Frameworks */,
+				B51B572A0B8132D899DEC1662FF63108 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -243,7 +759,42 @@
 			);
 			name = TPKeyboardAvoiding;
 			productName = TPKeyboardAvoiding;
-			productReference = AA6703E89A18FA19C2CD0816CEDD9872 /* TPKeyboardAvoiding.framework */;
+			productReference = BF9699F55B2238FC84D7AF9108EAF07E /* TPKeyboardAvoiding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD388F1BD6C2AFCC4F60D9B7267A378F /* SwiftMessages-SwiftMessages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 863317F8AB6CA6400571F0653A182E5B /* Build configuration list for PBXNativeTarget "SwiftMessages-SwiftMessages" */;
+			buildPhases = (
+				E896CDE35EC2F18680C617D70F8C76BC /* Sources */,
+				07A27910188AA489D087EA329BC6C985 /* Frameworks */,
+				B01221704193AFE9A6432F5A01377C4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftMessages-SwiftMessages";
+			productName = "SwiftMessages-SwiftMessages";
+			productReference = EBC3CF2134D187D14454E077144F099B /* SwiftMessages.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		EB45BD98DC84B7058C191EEA36777994 /* STPopup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54A275FEE184987916D998CA53912E7 /* Build configuration list for PBXNativeTarget "STPopup" */;
+			buildPhases = (
+				94DA3D7548084400395B33F1BA458882 /* Headers */,
+				CD235708B57A2A123072C1C588709D4B /* Sources */,
+				2767A73E3CD771CE6A2F88956E6D626B /* Frameworks */,
+				74E5D241D066D4E26ADBE22244A527F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STPopup;
+			productName = STPopup;
+			productReference = 7B746843FDEE52DB64F524FC808AF232 /* STPopup.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -263,25 +814,99 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 29E2472F85E3C32555D95BD55877A1C9 /* Products */;
+			productRefGroup = 13FCBCB1CA2930725866FEB0E981DD59 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42AC9C6D6E278C02E43F6854789C9A39 /* Pods-Eventers */,
-				F816A85A3AAF6ADDB04B3277EF18CA9F /* TPKeyboardAvoiding */,
+				9135E4CC75DA643F99BC22924C26EFD9 /* Pods-Eventers */,
+				B695461EB492891CE5C150D45FA6279D /* SimpleCheckbox */,
+				EB45BD98DC84B7058C191EEA36777994 /* STPopup */,
+				4A898472E475845FCC03787BB7AD2F2B /* SwiftMessages */,
+				CD388F1BD6C2AFCC4F60D9B7267A378F /* SwiftMessages-SwiftMessages */,
+				C037CBC0132577E0A47BEF4E8399EB5E /* TPKeyboardAvoiding */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		56C7EFB48542BAC0D56BFAC2D1B40381 /* Resources */ = {
+		55712DB9F907D44117ADB0EE1C14254C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E00DE388E6E60A412EBD375164F3747E /* Resources */ = {
+		562F2576424CCEC0F72392B457F8319C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3200530FF62028758A5CB0CB77BE6F6F /* SwiftMessages.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74E5D241D066D4E26ADBE22244A527F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F58311154EF692082AB4C921989BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B01221704193AFE9A6432F5A01377C4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3491BE251608C1C9D70DEB966D78B2A5 /* CardView.xib in Resources */,
+				962C6FD441D9A0276FBA28B57CD27327 /* CenteredView.xib in Resources */,
+				34B165F90344731B369EA2AC2185F911 /* errorIcon.png in Resources */,
+				CEAAB6003FA1CC3E2E871163459B3419 /* errorIcon@2x.png in Resources */,
+				76DDEB70926F5ADB29E8C0DE725E5FA4 /* errorIcon@3x.png in Resources */,
+				7D9EE7586496CFC45BE6161697C9255E /* errorIconLight.png in Resources */,
+				F59015F8F834130391E064835EC8D781 /* errorIconLight@2x.png in Resources */,
+				EA955996245D02A9BDE2B1D00FB9980F /* errorIconLight@3x.png in Resources */,
+				D2AEEBA413F68A916597E71FFC058D98 /* errorIconSubtle.png in Resources */,
+				D04D3BB7E2B7E64C322F0DB41F6D8567 /* errorIconSubtle@2x.png in Resources */,
+				3F20787B45F26A5A855A447F9FEF78C1 /* errorIconSubtle@3x.png in Resources */,
+				9FA379B36D933DC0005E5FB461E26ADA /* infoIcon.png in Resources */,
+				8E10D061B7B87CC48F56A1758EBFC45F /* infoIcon@2x.png in Resources */,
+				6CE8EF67053B7FF51F7FBFF526E16B41 /* infoIcon@3x.png in Resources */,
+				7320B8A177F194E8A9919960E28ED437 /* infoIconLight.png in Resources */,
+				26A6AACCD4FB5599A5F2D78FC69F9D4A /* infoIconLight@2x.png in Resources */,
+				FF0B7D5552686AD60E6F9E6E0FABBB87 /* infoIconLight@3x.png in Resources */,
+				BFCC1C74FC65453206E0B4F2C6E467B0 /* infoIconSubtle.png in Resources */,
+				6875D4D3ED98F2DB758310BD800C2C57 /* infoIconSubtle@2x.png in Resources */,
+				D5EF5A89CF0D19FA5F112A3A05C49089 /* infoIconSubtle@3x.png in Resources */,
+				0BDC81D982B8EFC503D7E829DDE26C75 /* MessageView.xib in Resources */,
+				B35E7DAA28BE06982F957DD8265E2901 /* StatusLine.xib in Resources */,
+				3C52B4EB6FEB98A955F8794EA7CEC9B6 /* successIcon.png in Resources */,
+				CB6A8A7789A8E03628297484731E15B6 /* successIcon@2x.png in Resources */,
+				FD21CD9F93FA4F2E45F877DE18A98CB4 /* successIcon@3x.png in Resources */,
+				F9855C3F84BDE7B36394649CFF666D4F /* successIconLight.png in Resources */,
+				AD541205D5FEA6AD52407091A891C1D8 /* successIconLight@2x.png in Resources */,
+				C1F25CE2A910C95E5118CDD6AA362132 /* successIconLight@3x.png in Resources */,
+				2DC36D866E4983F9704814F0B7400EB8 /* successIconSubtle.png in Resources */,
+				E64BCCCB806098B9D0973BE0165786EB /* successIconSubtle@2x.png in Resources */,
+				23F45FB420B04253ECD778592F361633 /* successIconSubtle@3x.png in Resources */,
+				CE59343A20EC43D2CB89EF4E86816707 /* TabView.xib in Resources */,
+				E05CF1E6836413A592F260F56DFB5C27 /* warningIcon.png in Resources */,
+				38B241D5870EC5A9BEED51C01A73E559 /* warningIcon@2x.png in Resources */,
+				EF6A6361F6AD29E1602B1C27FFDD0B4B /* warningIcon@3x.png in Resources */,
+				978EE2AD408DDAC44CD60DB791316E14 /* warningIconLight.png in Resources */,
+				327B4FA1719633B7DB9700E4D4AF77C2 /* warningIconLight@2x.png in Resources */,
+				60C1462CAC04FFEB55BE697807926C4A /* warningIconLight@3x.png in Resources */,
+				330BBD2B815D77A03E63BAA43B149611 /* warningIconSubtle.png in Resources */,
+				771D37FB2A3FDB041DC426BBF6DEA866 /* warningIconSubtle@2x.png in Resources */,
+				3C9FBCA361F1439EEEFB7A951484DBC0 /* warningIconSubtle@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51B572A0B8132D899DEC1662FF63108 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,41 +916,238 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		07CCDE5459EA5F6DD839B80E1CC586EE /* Sources */ = {
+		45285F48E7587ABDEFD3D5A59268DDAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD03D9344035B90536F4ABE306B6D5B /* TPKeyboardAvoiding-dummy.m in Sources */,
-				6C932ECF398C3E753C6E736AF57FE568 /* TPKeyboardAvoidingCollectionView.m in Sources */,
-				DBA629C4AFC98BE4727E077A352D3577 /* TPKeyboardAvoidingScrollView.m in Sources */,
-				576F726540B9A197C116392C812377D8 /* TPKeyboardAvoidingTableView.m in Sources */,
-				44378A1C481BACFB8300164A22292377 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				5F67C93392905A5A31B663FE2417F2E1 /* Checkbox.swift in Sources */,
+				4A90F5CB9B0B97E7941C510BF5F5DE4A /* SimpleCheckbox-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0FFC61A420B73AA6D0420FBEC241212F /* Sources */ = {
+		6BA93E7FFBC82FDE9807A0A3D7A994A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36268B2C78C616E90AB49793A51E1E2D /* Pods-Eventers-dummy.m in Sources */,
+				DB00EFB3DEC89F9E0C9F083BA865FEEB /* Pods-Eventers-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AB08B4604E29022B809AD9792DF6CE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE69FDDB3F29C76BFC6038AE3C39D413 /* AccessibleMessage.swift in Sources */,
+				07E8974161DA028B85D681C171BE5A3F /* Animator.swift in Sources */,
+				B8529A8FF481BE4A7B10598D37F06902 /* Array+Utils.swift in Sources */,
+				5AD8E3B386DF5EC2C191F5CE80A59BE3 /* BackgroundViewable.swift in Sources */,
+				7AD8CA905849F10EE91D46A1B0C7E0EC /* BaseView.swift in Sources */,
+				ECD4055E060361CA76B11895FA36D17D /* CALayer+Utils.swift in Sources */,
+				ABC278D089B5B5ECB859F7FB4B1D7271 /* CornerRoundingView.swift in Sources */,
+				12F2CB505E0933EC8ED489396011EAB3 /* Error.swift in Sources */,
+				EBBF2BA28AD03D99AEE90DC34AFCCFA1 /* Identifiable.swift in Sources */,
+				6D2763990D7BC03C49E4FC24B37DB0AB /* MarginAdjustable+Animation.swift in Sources */,
+				70A5D322D2529B3E3C354AFD27B51CD2 /* MarginAdjustable.swift in Sources */,
+				ED8BDC30C81B3A393514FC82A1F66CD2 /* MaskingView.swift in Sources */,
+				630CC71779BD864D080F839105FC194A /* MessageView.swift in Sources */,
+				7BAE7635327758DFBD2D15ED1451FC89 /* NSBundle+Utils.swift in Sources */,
+				3686A651A5F6E53E61E642805BFD9C10 /* PassthroughView.swift in Sources */,
+				A5C4C140F2EB6E5248E2C3DF2BC3439B /* PassthroughWindow.swift in Sources */,
+				443452E3BEA2CEC0E21320CF9AA232A7 /* PhysicsAnimation.swift in Sources */,
+				C335EEEC061CD925DDB2C82A69ED523A /* PhysicsPanHandler.swift in Sources */,
+				1025EFCD280CD80E7F1E219AA4121838 /* Presenter.swift in Sources */,
+				478D58243A83A485E5B4706FE12E10E2 /* SwiftMessages-dummy.m in Sources */,
+				DA3597173A228966B959BCFB2270459F /* SwiftMessages.swift in Sources */,
+				A0A46300D23ACCE758BFA544B2026E12 /* SwiftMessagesSegue.swift in Sources */,
+				204E11400A2174FC292CCAE30D93FED2 /* Theme.swift in Sources */,
+				436AEAF2828BACBE8C9B21D5D8417028 /* TopBottomAnimation.swift in Sources */,
+				20E7EEE22EC9F35D178D1D292E403B7A /* UIEdgeInsets+Utils.swift in Sources */,
+				8C246877E46ED1B58F7B52143172ABA4 /* UIViewController+Utils.swift in Sources */,
+				4FA8FDBF6071B7A46BB47588C7C7B0A4 /* ViewControllerContainerView.swift in Sources */,
+				E5AE1924A51CE78A9CE60536D197E201 /* Weak.swift in Sources */,
+				B532994166E6E023CBDEC140CB0D28CF /* WindowViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CD7679748828876E58A23D4F139D72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554A48DA6730D2AE2DF6DF4B0A8EFE6C /* TPKeyboardAvoiding-dummy.m in Sources */,
+				9260FF5ACC29732F49A8E40A0EBC9DE6 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				BCC63689F6CD0A4E55237A0EFA1E6853 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				5854CC8CA695B8D7B1DEB4F92D63DFC2 /* TPKeyboardAvoidingTableView.m in Sources */,
+				9DB01C5ED65F9D69E9D188052A97B902 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD235708B57A2A123072C1C588709D4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328D0E0660F7752D9F0364388F6B89ED /* STPopup-dummy.m in Sources */,
+				94F5F53F264A7B804DCA9FA5D0DF9502 /* STPopupController.m in Sources */,
+				53F3572173FCB863A32B4B860049DA53 /* STPopupControllerTransitioningFade.m in Sources */,
+				CE0C3BC055F3624208A12C5ED45DA624 /* STPopupControllerTransitioningSlideVertical.m in Sources */,
+				36A748BF8903F61220DC75F3448A0289 /* STPopupLeftBarItem.m in Sources */,
+				FB2B87E56FC68DC8A86ECBB47E4F7325 /* STPopupNavigationBar.m in Sources */,
+				886F17FB1C15A4E363BB4B4BC83F74D8 /* UIResponder+STPopup.m in Sources */,
+				5019A76BB17BF2434F3C1D744ACEE771 /* UIViewController+STPopup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E896CDE35EC2F18680C617D70F8C76BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BA97EED66B619E9CD155CFB8A4952062 /* PBXTargetDependency */ = {
+		0120277A707E76C3DD631ABDCC9FB0E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TPKeyboardAvoiding;
-			target = F816A85A3AAF6ADDB04B3277EF18CA9F /* TPKeyboardAvoiding */;
-			targetProxy = B1646C07E9488B656258598D97EC0BA3 /* PBXContainerItemProxy */;
+			target = C037CBC0132577E0A47BEF4E8399EB5E /* TPKeyboardAvoiding */;
+			targetProxy = 3157B3AB5A3719A1E711D59038BEE69D /* PBXContainerItemProxy */;
+		};
+		31CF2D44D0168DEC0559C98BF88E6452 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = STPopup;
+			target = EB45BD98DC84B7058C191EEA36777994 /* STPopup */;
+			targetProxy = 9766436CE47596FF48D23B8ADEA6DA59 /* PBXContainerItemProxy */;
+		};
+		4D67C9F7320CEA7232453443E978EEF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftMessages-SwiftMessages";
+			target = CD388F1BD6C2AFCC4F60D9B7267A378F /* SwiftMessages-SwiftMessages */;
+			targetProxy = 3953A7CDC8A01C84BB154F8B9FCD17AB /* PBXContainerItemProxy */;
+		};
+		D4717F113406D6AEEF7C4751AD228C6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleCheckbox;
+			target = B695461EB492891CE5C150D45FA6279D /* SimpleCheckbox */;
+			targetProxy = 4309AEEEE5151087457C92E16160ED3E /* PBXContainerItemProxy */;
+		};
+		E470C352B63E9B35ED3299CC77D58866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMessages;
+			target = 4A898472E475845FCC03787BB7AD2F2B /* SwiftMessages */;
+			targetProxy = B224B23A02179FEB63F43256ED977756 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		24C96F33C4F492E20166450374357CED /* Debug */ = {
+		18F8169C7033A312532ED5F62ECE2D93 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FEE242D340ADCBFF237890318632008 /* TPKeyboardAvoiding.xcconfig */;
+			baseConfigurationReference = A245D19E5EF2EAA5C925F1F61E2D170F /* SwiftMessages.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftMessages";
+				INFOPLIST_FILE = "Target Support Files/SwiftMessages/ResourceBundle-SwiftMessages-SwiftMessages-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = SwiftMessages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		196EFD40E25D11EF2AF1ADC9D01E3F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FA28D4F819C563BD6481C109E63AF60 /* STPopup.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/STPopup/STPopup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/STPopup/STPopup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/STPopup/STPopup.modulemap";
+				PRODUCT_MODULE_NAME = STPopup;
+				PRODUCT_NAME = STPopup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		358FBAD527EECF558B4A6190FE08AE02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10A2257237FD6C8681D2B12613B7DAB9 /* Pods-Eventers.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eventers/Pods-Eventers-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eventers/Pods-Eventers.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		383C9C25AE5D476CEB22D86AD1E17216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A245D19E5EF2EAA5C925F1F61E2D170F /* SwiftMessages.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftMessages";
+				INFOPLIST_FILE = "Target Support Files/SwiftMessages/ResourceBundle-SwiftMessages-SwiftMessages-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = SwiftMessages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		47263047F9BBFFCC963024913AD44700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D84CF5EBCA94BE0F4B94BED4697322F4 /* TPKeyboardAvoiding.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -358,12 +1180,10 @@
 			};
 			name = Debug;
 		};
-		715571B290AA040E035321607C075CA3 /* Debug */ = {
+		5E6F89461B7097AC530068DEDF078563 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09A833CE86914E41A019C47C236C9731 /* Pods-Eventers.debug.xcconfig */;
+			baseConfigurationReference = D84CF5EBCA94BE0F4B94BED4697322F4 /* TPKeyboardAvoiding.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -373,35 +1193,33 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Eventers/Pods-Eventers-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Eventers/Pods-Eventers.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				PRODUCT_MODULE_NAME = TPKeyboardAvoiding;
+				PRODUCT_NAME = TPKeyboardAvoiding;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		9E071F33C7676FB399EC4009EC02CA1E /* Release */ = {
+		69D82988D978ABD32547A29C15E5B68A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10A2257237FD6C8681D2B12613B7DAB9 /* Pods-Eventers.release.xcconfig */;
+			baseConfigurationReference = A245D19E5EF2EAA5C925F1F61E2D170F /* SwiftMessages.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -411,23 +1229,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Eventers/Pods-Eventers-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMessages/SwiftMessages-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMessages/SwiftMessages-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Eventers/Pods-Eventers.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SwiftMessages/SwiftMessages.modulemap";
+				PRODUCT_MODULE_NAME = SwiftMessages;
+				PRODUCT_NAME = SwiftMessages;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -495,6 +1312,77 @@
 			};
 			name = Release;
 		};
+		AB41D94CC9BEC5CFF6DDDAAF809226FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B624744F3560F6D0D53D31042296BC /* SimpleCheckbox.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleCheckbox/SimpleCheckbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleCheckbox/SimpleCheckbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SimpleCheckbox/SimpleCheckbox.modulemap";
+				PRODUCT_MODULE_NAME = SimpleCheckbox;
+				PRODUCT_NAME = SimpleCheckbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AFD15969AD62F42C7CF60CF238E1BBA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A245D19E5EF2EAA5C925F1F61E2D170F /* SwiftMessages.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMessages/SwiftMessages-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMessages/SwiftMessages-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftMessages/SwiftMessages.modulemap";
+				PRODUCT_MODULE_NAME = SwiftMessages;
+				PRODUCT_NAME = SwiftMessages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -559,9 +1447,84 @@
 			};
 			name = Debug;
 		};
-		F5EAD5B59ED1F696B53BA495584931EF /* Release */ = {
+		D90C8C593FF9CC7221171BF1470451EC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FEE242D340ADCBFF237890318632008 /* TPKeyboardAvoiding.xcconfig */;
+			baseConfigurationReference = 09A833CE86914E41A019C47C236C9731 /* Pods-Eventers.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Eventers/Pods-Eventers-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Eventers/Pods-Eventers.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4C52C50B01643E658ADEC58BBC9A490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B624744F3560F6D0D53D31042296BC /* SimpleCheckbox.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleCheckbox/SimpleCheckbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleCheckbox/SimpleCheckbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SimpleCheckbox/SimpleCheckbox.modulemap";
+				PRODUCT_MODULE_NAME = SimpleCheckbox;
+				PRODUCT_NAME = SimpleCheckbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6F58EDF79F86F33EBE58A496929B5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FA28D4F819C563BD6481C109E63AF60 /* STPopup.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -572,8 +1535,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/STPopup/STPopup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/STPopup/STPopup-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -581,9 +1544,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
-				PRODUCT_MODULE_NAME = TPKeyboardAvoiding;
-				PRODUCT_NAME = TPKeyboardAvoiding;
+				MODULEMAP_FILE = "Target Support Files/STPopup/STPopup.modulemap";
+				PRODUCT_MODULE_NAME = STPopup;
+				PRODUCT_NAME = STPopup;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -598,29 +1561,65 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04738D9BD55980853C4F7AF2B57C15CF /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24C96F33C4F492E20166450374357CED /* Debug */,
-				F5EAD5B59ED1F696B53BA495584931EF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		18A92B7BC0FA1AABD52A1E6968961731 /* Build configuration list for PBXNativeTarget "Pods-Eventers" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				715571B290AA040E035321607C075CA3 /* Debug */,
-				9E071F33C7676FB399EC4009EC02CA1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1391485F05B41BD35738A433056B7FA /* Debug */,
 				A105C1752A0A49B30ED621B71E226CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		590E91AB55B976512FBBE0E27535FB5F /* Build configuration list for PBXNativeTarget "Pods-Eventers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90C8C593FF9CC7221171BF1470451EC /* Debug */,
+				358FBAD527EECF558B4A6190FE08AE02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		863317F8AB6CA6400571F0653A182E5B /* Build configuration list for PBXNativeTarget "SwiftMessages-SwiftMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F8169C7033A312532ED5F62ECE2D93 /* Debug */,
+				383C9C25AE5D476CEB22D86AD1E17216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94A6F2B1B6709039336B61689BBA1E7C /* Build configuration list for PBXNativeTarget "SwiftMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD15969AD62F42C7CF60CF238E1BBA8 /* Debug */,
+				69D82988D978ABD32547A29C15E5B68A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15464D7685B2C3219E075A4CA873940 /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47263047F9BBFFCC963024913AD44700 /* Debug */,
+				5E6F89461B7097AC530068DEDF078563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDBA7B05CC7DF2A229940EA8020EED1 /* Build configuration list for PBXNativeTarget "SimpleCheckbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB41D94CC9BEC5CFF6DDDAAF809226FB /* Debug */,
+				F4C52C50B01643E658ADEC58BBC9A490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54A275FEE184987916D998CA53912E7 /* Build configuration list for PBXNativeTarget "STPopup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196EFD40E25D11EF2AF1ADC9D01E3F8D /* Debug */,
+				F6F58EDF79F86F33EBE58A496929B5A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
